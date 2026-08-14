@@ -1,0 +1,49 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://www.dralexpainmanagement.ie/#clinic",
+      "name": "Dr. Alex Pain Management Clinic",
+      "image": "https://www.dralexpainmanagement.ie/assets/images/og-image-placeholder.svg",
+      "url": "https://www.dralexpainmanagement.ie/",
+      "telephone": "[PLACEHOLDER: clinic phone number, e.g. +353-1-000-0000]",
+      "email": "[PLACEHOLDER: clinic email address]",
+      "priceRange": "$$",
+      "medicalSpecialty": "Pain Management",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[PLACEHOLDER: street address]",
+        "addressLocality": "Dublin",
+        "addressRegion": "Co. Dublin",
+        "postalCode": "[PLACEHOLDER: Eircode]",
+        "addressCountry": "IE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "[PLACEHOLDER: opening time, e.g. 09:00]",
+          "closes": "[PLACEHOLDER: closing time, e.g. 17:00]"
+        }
+      ],
+      "sameAs": [
+        "[PLACEHOLDER: Google Business Profile URL]",
+        "[PLACEHOLDER: LinkedIn URL, if available]"
+      ],
+      "employee": { "@id": "https://www.dralexpainmanagement.ie/#physician" }
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://www.dralexpainmanagement.ie/#physician",
+      "name": "Dr. Alex [PLACEHOLDER: surname]",
+      "medicalSpecialty": "Pain Management",
+      "worksFor": { "@id": "https://www.dralexpainmanagement.ie/#clinic" },
+      "url": "https://www.dralexpainmanagement.ie/",
+      "sameAs": [
+        "[PLACEHOLDER: LinkedIn URL, if available]",
+        "[PLACEHOLDER: Irish Medical Council register listing URL, if available]"
+      ]
+    }
+  ]
+}
