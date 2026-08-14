@@ -1,10 +1,31 @@
 # Competitor Notes — Dublin Pain Clinics
 
-Quick on-page observations of the general competitive landscape for Dublin pain management
-clinics (e.g. painclinic.ie, dublinpainclinic.ie, and similar consultant-led pain practices).
-These are general patterns observed across this category, written from SEO/UX best-practice
-review rather than a live audit in this session — worth spot-checking the actual live sites
-before final launch, since content changes over time.
+> ⚠️ **IMPORTANT — THESE ARE UNVERIFIED HYPOTHESES, NOT AUDIT FINDINGS.**
+> No competitor site was actually visited or inspected when this file was written. The points
+> below are *common patterns in the medical-practice website category*, written from general
+> SEO/UX experience. They have **not** been checked against any live Dublin pain clinic site.
+>
+> Treat every bullet as "a thing to go and check," not as a fact about a named competitor.
+> **Do not send this file to a client or use it in a pitch as-is** — the claims would not
+> survive scrutiny. A real audit means opening each site and checking: view-source for JSON-LD,
+> the actual heading structure, the real title/meta description, and a PageSpeed run.
+
+## Competitors to audit
+
+The original brief named painclinic.ie and dublinpainclinic.ie. A search for Dublin pain clinics
+also surfaced these, which should be included in a real competitive audit:
+
+- dublinpainclinic.ie
+- beaconpainmanagement.ie (Beacon Pain Clinic)
+- pain-treatment.ie
+- integrativemedicine.ie (Dun Laoghaire)
+- painreliefireland.ie
+- Aggregators worth noting separately, since they compete for the same queries without being
+  clinics: odycy.com and chronicpain.ie/pain-clinics — directory listings frequently outrank
+  individual practice sites for "pain clinic Dublin" style searches, which is an argument for
+  also claiming/optimising a listing on them.
+
+## Hypotheses to verify (category patterns, not confirmed findings)
 
 - **Thin, generic content.** Many competitor sites describe treatments in one vague paragraph
   rather than breaking out each condition and treatment with its own heading. This limits how
@@ -38,3 +59,18 @@ before final launch, since content changes over time.
   guidelines on testimonials for registered practitioners.
   → *Opportunity:* deliberately omit testimonials from this build unless/until Dr. Alex supplies
   real, compliance-reviewed ones (per the brief's compliance note).
+
+---
+
+## Why this wasn't verified in this session
+
+Outbound network access in the build environment blocked requests to these domains, so a live
+audit was not possible. This is flagged rather than quietly glossed over, because the
+"opportunity" framing above only holds if the gaps are real — if a competitor *does* already have
+solid schema markup and per-condition pages, the differentiation argument for this build weakens
+and the strategy should be revisited.
+
+**Next step before this informs any client-facing claim:** open each site listed above, and for
+each one record: (1) title tag and meta description, (2) whether JSON-LD is present and which
+types, (3) whether conditions/treatments have individual headings or are one block of prose,
+(4) NAP consistency vs. their Google Business Profile, (5) a Lighthouse/PageSpeed score.
