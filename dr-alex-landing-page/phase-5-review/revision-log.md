@@ -57,3 +57,41 @@ All items below are marked inline in `phase-2-content/content-draft.md` and
 - Patient testimonials — deliberately left out per the brief and Medical Council of Ireland
   advertising guidelines, unless/until Dr. Alex supplies real, compliance-reviewed testimonials.
 - No outcome/efficacy claims are used anywhere in the copy (checked against Phase 2 draft).
+
+---
+
+## Competitor Design Review — 2026-08-14
+
+Three competitor homepages reviewed from screenshots (dublinpainclinic.ie,
+beaconpainmanagement.ie, pain-treatment.ie). Full findings in
+`phase-1-research-seo/competitor-notes.md`. Two things that change the plan:
+
+1. **Two of the three sites are the same business** (Dublin Pain Clinic Group / Beacon Pain
+   Clinic — shared phone, email and address). The real competitive picture is one large
+   consultant-led group plus one independent integrative practice.
+
+2. **Several assumed "competitor gaps" were wrong.** Competitors *do* have dedicated condition
+   pages and substantial structured content. Our per-condition headings are table stakes, not a
+   differentiator. The build is solid but less distinctive than the original notes implied.
+
+### New gaps identified in our build (not defects — additions worth making)
+
+- [ ] No FAQ section — the strongest single feature seen on any competitor (Beacon puts five
+      collapsible booking questions in the hero). Needs answers from Dr. Alex; also a candidate
+      for FAQ structured data.
+- [ ] No "how it works" three-step patient journey section — present on both Beacon sites.
+- [ ] Insurers shown as text pills rather than logos — weaker trust signal. Needs logo files and
+      confirmation of permission to display them.
+- [ ] GP referral pathway is only a one-line trust point; Beacon gives it a nav item and a
+      dedicated CTA aimed at referring GPs.
+- [ ] No utility bar with phone/email/opening hours above the header.
+- [ ] No factual credibility figures (years of experience, appointment lead time).
+
+### Compliance point to raise with Dr. Alex
+
+Competitors publish quantified claims ("95% Patient Satisfaction", "20,000+ Personalised Care
+Plans Created") and one uses star-rated patient testimonials plus outcome-promising headlines.
+Our build deliberately carries none of this. Expect the question "why don't we have stats like
+theirs?" — the defensible position is that verifiable factual figures (years in practice,
+waiting times) are fine, while satisfaction percentages and testimonials carry regulatory risk
+under Medical Council of Ireland advertising guidance and need review before use.
