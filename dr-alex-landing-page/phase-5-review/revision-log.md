@@ -145,3 +145,58 @@ the fact (still 1 × h1, 7 × h2, 18 × h3; JSON-LD, OG, Twitter and canonical a
       frame). The reference leans heavily on its consultant portrait — this is the single biggest
       visual gap remaining.
 - [ ] Post-nominals / credentials line for under the name in the hero.
+
+---
+
+## Legibility & Colour Consistency Pass — 2026-08-14
+
+**Requested:** "this is for a doctor, remember font and button and all should be clear, i can see
+colour inconsistency and lack of visibility."
+
+Rather than adjust by eye, every visible text element was measured in the browser for computed
+font size and actual contrast ratio. That found one severe defect and a systemic size problem.
+
+### Severe: header CTA was dark-on-dark (1.97:1)
+
+`.primary-nav a { color: teal-900 }` outranked `.btn-primary`'s white label, so the header
+"Contact Us" button rendered dark green text on a green fill — effectively unreadable. Introduced
+by the teal restyle. The colour rule is now scoped to `.primary-nav ul a`, leaving the button
+alone; the CTA measures 7.36:1.
+
+### Systemic: text was too small for this audience
+
+Patients for a pain practice skew older and are often in discomfort. Fifteen elements measured
+under 14px, including the primary CTA and the consultant's credentials.
+
+| Element | Before | After |
+|---|---|---|
+| Base body | 16px | 17px |
+| Primary buttons | 12.5px | 15.6px |
+| Hero credentials | 11.5px italic, 72% white | 15.2px, 92% white |
+| Hero name eyebrow | 12.5px | 16px |
+| Section eyebrows | 11.5px | 14px |
+| Form labels | 12.5px | 14.4px |
+| Card body copy | 15px muted | 17px primary text |
+| Utility bar / footer / fine print | 12.5–13.6px | 14–15.6px |
+
+Button letter-spacing was also reduced (0.12em → 0.07em); heavy tracking on uppercase text looks
+refined but measurably slows reading.
+
+### Colour consistency
+
+- `--color-text-muted` darkened `#4f5c58` → `#3f4b47` (9.0:1 on white). It was being used for
+  real body copy, not just captions.
+- Card and trust-point body copy moved off muted onto the primary text colour entirely.
+- The error red is now a token (`--color-error`) rather than a one-off hex.
+- The gold rule under section headings was three near-duplicate selectors, which is why headings
+  looked inconsistent. Now a single `.section h2:not(.sr-only)::after`.
+
+### Note on the audit method
+
+The measuring script does not composite translucent backgrounds, so it reported the hero portrait
+label at 1.0:1. Computed properly (white 88% over a 8% white frame over teal) it is 5.12:1 and
+passes. Worth knowing before trusting that script's output on any element with an alpha
+background.
+
+**Verified after the pass:** no real contrast failures, nothing below 13px, and content unchanged
+— 1 × h1, 7 × h2, 18 × h3, JSON-LD intact, zero broken links, contact form still submits.
