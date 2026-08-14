@@ -1,0 +1,12 @@
+# Netlify configuration.
+#
+# The deployable site is not at the repo root — the repo is organized into phase
+# folders, and only phase-3-design-build contains the actual site. This tells
+# Netlify where to publish from so the repo can be connected directly with no
+# manual settings in the Netlify UI.
+#
+# The site is plain static HTML/CSS/JS, so there is no build step and no
+# build command is needed.
+
+[build]
+  publish = "dr-alex-landing-page/phase-3-design-build"

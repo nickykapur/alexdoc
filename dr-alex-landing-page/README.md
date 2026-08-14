@@ -32,6 +32,23 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
+## Deploying to Netlify
+
+The repo can be connected to Netlify directly — no settings need to be entered in the Netlify UI.
+The `netlify.toml` at the repo root already points Netlify at the right folder:
+
+```toml
+[build]
+  publish = "dr-alex-landing-page/phase-3-design-build"
+```
+
+There is no build command and no build step — the site is plain static files. `sitemap.xml` and
+`robots.txt` sit at the root of that publish directory, so they resolve at `/sitemap.xml` and
+`/robots.txt` on the deployed domain, which is where search engines expect them.
+
+Note that the placeholder content described below will be publicly visible on the deployed site,
+so treat the first deploy as a staging preview rather than the practice's live public URL.
+
 ## Before This Goes Live
 
 This build is content-complete but **not launch-ready** — a number of real practice details were
