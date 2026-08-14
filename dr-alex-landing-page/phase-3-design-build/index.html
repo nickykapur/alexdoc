@@ -204,9 +204,31 @@
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
+  <!-- Utility bar: contact details visible before any scroll -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <a href="tel:[PLACEHOLDER-PHONE]">
+        <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+        [PLACEHOLDER: clinic phone number]
+      </a>
+      <a href="mailto:[PLACEHOLDER-EMAIL]">
+        <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+        [PLACEHOLDER: clinic email]
+      </a>
+    </div>
+  </div>
+
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top">Dr. Alex <span>Pain Management</span></a>
+      <a class="logo" href="#top">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="4" fill="currentColor" opacity=".9"/>
+          <circle cx="24" cy="24" r="10" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".6"/>
+          <circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".38"/>
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1" opacity=".2"/>
+        </svg>
+        <span class="logo-text">Dr. Alex <span>Pain Management</span></span>
+      </a>
 
       <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
         <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
@@ -221,7 +243,7 @@
           <li><a href="#insurance">Insurance</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a class="btn btn-primary nav-cta" href="#contact">Book a Consultation</a>
+        <a class="btn btn-primary nav-cta" href="#contact">Contact Us</a>
       </nav>
 
       <a class="call-button" href="tel:[PLACEHOLDER-PHONE]" aria-label="Call the clinic">
@@ -236,14 +258,30 @@
     <section class="hero" id="top">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <h1>Pain Management Care in Dublin with Dr. Alex</h1>
+          <p class="hero-eyebrow">Dr. Alex <span class="placeholder-inline">[PLACEHOLDER: surname]</span></p>
+          <p class="hero-credentials">[PLACEHOLDER: post-nominals, e.g. MB BCh BAO, FCAI, FFPMCAI]</p>
+          <h1>Pain Management Care in Dublin</h1>
           <p class="hero-subhead">Consultant-led, evidence-based pain management for back pain, sciatica, nerve pain and chronic pain conditions — with a clear GP referral pathway.</p>
           <div class="hero-actions">
             <a class="btn btn-primary btn-lg" href="#contact">Book a Consultation</a>
-            <a class="btn btn-outline btn-lg" href="tel:[PLACEHOLDER-PHONE]">
+            <a class="btn btn-ghost btn-lg" href="tel:[PLACEHOLDER-PHONE]">
               <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
-              Call [PLACEHOLDER: clinic phone number]
+              Call the Clinic
             </a>
+          </div>
+        </div>
+
+        <div class="hero-portrait">
+          <svg class="hero-rings" viewBox="0 0 400 400" aria-hidden="true">
+            <circle cx="200" cy="200" r="60" fill="none" stroke="currentColor" stroke-width="1"/>
+            <circle cx="200" cy="200" r="110" fill="none" stroke="currentColor" stroke-width="1"/>
+            <circle cx="200" cy="200" r="160" fill="none" stroke="currentColor" stroke-width="1"/>
+            <circle cx="200" cy="200" r="198" fill="none" stroke="currentColor" stroke-width="1"/>
+          </svg>
+          <!-- PLACEHOLDER: replace this frame with a real professional portrait of Dr. Alex
+               (recommended 3:4 portrait crop, optimized JPG/WebP, with descriptive alt text). -->
+          <div class="portrait-frame">
+            <span>Portrait of<br>Dr. Alex</span>
           </div>
         </div>
       </div>

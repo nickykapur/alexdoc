@@ -95,3 +95,53 @@ Our build deliberately carries none of this. Expect the question "why don't we h
 theirs?" — the defensible position is that verifiable factual figures (years in practice,
 waiting times) are fine, while satisfaction percentages and testimonials carry regulatory risk
 under Medical Council of Ireland advertising guidance and need review before use.
+
+---
+
+## Design Direction Change — 2026-08-14
+
+**Requested:** match the visual style of The Pain Clinic (UPMC Whitfield Hospital) — supplied as a
+screenshot reference.
+
+**Changed:** full restyle of `css/styles.css` plus header/hero markup in `index.html`. No content,
+heading hierarchy, schema, or meta tags were altered — this was a visual pass only, verified after
+the fact (still 1 × h1, 7 × h2, 18 × h3; JSON-LD, OG, Twitter and canonical all intact).
+
+| | Before | After |
+|---|---|---|
+| Palette | Navy/blue `#0b1f3a` | Deep teal `#0e6153`, cream `#f8f4ed`, gold accent |
+| Headings | Sans-serif | Serif display (Georgia stack) |
+| Buttons | Sentence case, square-ish | Uppercase, letterspaced, pill |
+| Sections | White / pale blue | White / cream alternating, gold rule under headings |
+| Header | Logo + nav | Utility bar (phone/email) above, concentric-ring logo mark, centred nav |
+| Hero | Text only | Two-column with portrait frame, gold name eyebrow, credentials line, ring motif |
+| Footer | Navy | Deep teal `#062f29` |
+
+**Deliberate divergences from the reference, and why:**
+
+- **Hero primary CTA is white, not dark teal.** The reference uses a dark button on its teal hero.
+  Measured, a dark teal fill reaches only ~2:1 against our hero band — short of the 3:1 WCAG 1.4.11
+  requires for a UI component boundary. White gives 7.36:1. Flagged because it is a visible
+  difference from the reference that was made on purpose.
+- **Gold has three tints** (`--color-gold`, `-light`, `-dark`) rather than one. A single gold cannot
+  clear 4.5:1 on white, cream and teal simultaneously; the hero eyebrow needed `#eac878` (4.57:1)
+  where the base gold managed only 3.40:1.
+- **Type is a system serif stack (Georgia), not a webfont.** Keeps the zero-dependency, no-external-
+  request build. If the exact editorial feel of the reference is wanted, self-hosting a display
+  serif (Playfair Display or similar) is the upgrade path — it costs one font request.
+
+**Two bugs found and fixed during this pass:**
+
+1. **Hero CTA was invisible** — the teal primary button rendered on the teal hero band with 1.00:1
+   contrast. Caught on screenshot review, not in code.
+2. **Mobile nav overlay covered the header** — a regression introduced by adding the utility bar.
+   The overlay was offset from the viewport top by the header height, so anything above the header
+   pushed the header underneath it. Re-anchored the overlay to the header's own bottom edge
+   (`position: absolute; top: 100%`), which now holds at both mobile and tablet.
+
+**New outstanding placeholders from this change:**
+
+- [ ] Professional portrait photograph of Dr. Alex for the hero (3:4 crop; currently a placeholder
+      frame). The reference leans heavily on its consultant portrait — this is the single biggest
+      visual gap remaining.
+- [ ] Post-nominals / credentials line for under the name in the hero.
