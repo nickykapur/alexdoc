@@ -3,17 +3,18 @@
 Final meta tags used in `phase-3-design-build/index.html`, kept here for quick reference and
 future edits (e.g. if the domain, surname, or hero image changes).
 
-## Title tag (54 characters)
+## Title tag (40 characters)
 
 ```
 Pain Management Clinic Dublin | Dr. Alex
 ```
 
-Includes the primary keyword ("Pain Management Clinic Dublin") at the front, under the 60-character
-guideline. `[PLACEHOLDER: append Dr. Alex's surname once confirmed, keeping the tag at or under
-60 characters]`.
+Includes the primary keyword ("Pain Management Clinic Dublin") at the front, well under the
+60-character guideline. That leaves **20 characters of headroom** —
+`[PLACEHOLDER: append Dr. Alex's surname once confirmed]`; anything up to 20 characters
+(including the leading space) keeps the tag within 60.
 
-## Meta description (145 characters)
+## Meta description (123 characters)
 
 ```
 Consultant-led pain management in Dublin with Dr. Alex — back pain, sciatica, nerve pain & more. Book a consultation today.

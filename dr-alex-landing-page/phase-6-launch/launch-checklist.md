@@ -29,7 +29,7 @@ and need real input or a decision from Dr. Alex before this site goes live — s
       launch.)
 
 - [x] **Title tag, meta description, and schema markup all in place and correct**
-      `<title>` (54 characters), meta description (145 characters), canonical, Open Graph, Twitter
+      `<title>` (40 characters), meta description (123 characters), canonical, Open Graph, Twitter
       Card, and combined `MedicalClinic` + `Physician` JSON-LD are all implemented — see
       `phase-4-seo-setup/meta-tags.md` and `schema.json`. Values that depend on real practice
       details (phone, address, hours, `sameAs` links) are placeholders pending confirmation.
