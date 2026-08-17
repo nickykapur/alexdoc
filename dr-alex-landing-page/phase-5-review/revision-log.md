@@ -200,3 +200,30 @@ background.
 
 **Verified after the pass:** no real contrast failures, nothing below 13px, and content unchanged
 — 1 × h1, 7 × h2, 18 × h3, JSON-LD intact, zero broken links, contact form still submits.
+
+---
+
+## Portrait Added — 2026-08-17
+
+Photograph supplied by the user via chat upload. Correction to what was said earlier in this
+project: images pasted into the conversation **are** written to the session filesystem
+(`~/.claude/uploads/`), so it could be added directly — no manual GitHub upload was needed.
+
+**Processing:** source 392×468 PNG (173 KB) → centre-cropped to 351×468, an exact 3:4 to match the
+hero frame (21px trimmed from each side, full head-to-shoulders height preserved) → JPEG quality
+88 at **26 KB**, an 85% reduction. Converted via Chromium canvas, as neither PIL nor ImageMagick
+is present in this environment.
+
+**Known limitation:** at 351px wide the image renders into a 320px box, so it is below 2× for
+high-DPI screens and will look slightly soft on a modern phone or retina display. Flagged inline
+in `index.html`. **If an ~800×1067 original exists it should replace this** — it is the single
+cheapest remaining quality win, and a consultant portrait is exactly where softness is most
+noticeable.
+
+The photo is already toned in a cool teal-grey, which happens to sit well against the teal hero
+band; its white background reads as a deliberate portrait plate, matching the treatment on the
+UPMC reference site.
+
+**Still not supplied:** the three procedure images (spinal injections, radiofrequency ablation,
+joint ablation). For clinical photographs, confirm patient consent and image licensing before
+publishing — an obligation the portrait does not carry.

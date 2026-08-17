@@ -327,14 +327,13 @@ h3 { font-size: 1.28rem; margin-bottom: 0.5rem; letter-spacing: 0; }
   color: rgba(255, 255, 255, 0.88);
 }
 
-/* Real portrait. The supplied photo is roughly 7:8 while the frame is 3:4, so
-   object-fit crops rather than distorts, and object-position keeps the crop off
-   the top of the head. Same box as the placeholder, so swapping one for the
-   other changes nothing else in the layout. */
+/* Portrait. The file is pre-cropped to an exact 3:4, so object-fit only guards
+   against a future replacement with different proportions. */
 .portrait-photo {
   width: 100%;
   max-width: 320px;
   aspect-ratio: 3 / 4;
+  height: auto;
   object-fit: cover;
   object-position: 50% 20%;
   border: 1px solid rgba(255, 255, 255, 0.28);

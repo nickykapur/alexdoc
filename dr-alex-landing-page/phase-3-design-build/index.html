@@ -303,20 +303,14 @@
             <circle cx="200" cy="200" r="160" fill="none" stroke="currentColor" stroke-width="1"/>
             <circle cx="200" cy="200" r="198" fill="none" stroke="currentColor" stroke-width="1"/>
           </svg>
-          <!-- PORTRAIT — one step to go live:
-               1. Add the photo to the repo at assets/images/dr-mudrakouski-portrait.jpg
-               2. Delete the <div class="portrait-frame"> below and uncomment the <img> beside it.
-               The .portrait-photo class is already styled to match the frame exactly, so nothing
-               else in the layout moves.
-
+          <!-- Source was 392x468; pre-cropped to 351x468 (exact 3:4) so no further crop is
+               needed at render. NOTE: at 351px wide this is below 2x for the 320px display box,
+               so it will look slightly soft on high-DPI screens — replace with an ~800x1067
+               original if one exists. -->
           <img class="portrait-photo"
                src="assets/images/dr-mudrakouski-portrait.jpg"
-               width="800" height="1067" loading="eager" decoding="async"
+               width="351" height="468" loading="eager" decoding="async"
                alt="Dr Aliaksandr Mudrakouski, Consultant in Pain Management">
-          -->
-          <div class="portrait-frame">
-            <span>Portrait of<br>Dr Mudrakouski</span>
-          </div>
         </div>
       </div>
     </section>
