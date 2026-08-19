@@ -109,6 +109,14 @@ reception number are published instead.
       factual claim about the practice. Confirm or remove.
 - [ ] GP referral policy — whether patients may self-refer
 - [ ] Domain name — every URL is `[PLACEHOLDER-DOMAIN]`
-- [ ] Portrait photograph and the three procedure images (spinal injections, radiofrequency
-      ablation, joint ablation) — did not transmit
-- [ ] For any clinical photograph: confirm patient consent and image licensing before publishing
+- [x] **Portrait photograph — supplied and live.** Confirmed 2026-08-17 as Dr Mudrakouski's own
+      personal photograph. He is both the subject and the practice principal, so there is no
+      third-party consent or licensing question. Cleared for publication.
+      *Quality note, not a blocker:* the file is 351×468, which renders below 2× on high-DPI
+      screens. Consistent with a personal photo rather than a professional shoot. A studio
+      headshot would be a worthwhile upgrade whenever convenient — the hero portrait is the
+      page's main credibility image — but the current one is usable and live.
+- [ ] Three procedure images (spinal injections, radiofrequency ablation, joint ablation) — still
+      not transmitted. **These are a separate question from the portrait:** clinical images may
+      show patients or identifiable anatomy, so patient consent and image licensing must be
+      confirmed before any of them is published.
