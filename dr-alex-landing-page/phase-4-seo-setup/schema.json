@@ -22,8 +22,8 @@
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "[PLACEHOLDER: opening time]",
-            "closes": "[PLACEHOLDER: closing time]"
+            "opens": "08:00",
+            "closes": "19:00"
           }
         ],
         "sameAs": [
@@ -37,6 +37,11 @@
         "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#physician",
         "name": "Dr Aliaksandr Mudrakouski",
         "medicalSpecialty": "PainMedicine",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "Irish Medical Council registration number",
+          "value": "230380"
+        },
         "worksFor": { "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#clinic" },
         "url": "https://www.[PLACEHOLDER-DOMAIN].ie/",
         "hospitalAffiliation": {
@@ -49,7 +54,7 @@
           }
         },
         "memberOf": [
-          { "@type": "Organization", "name": "Faculty of Pain Medicine, College of Anaesthesiologists of Ireland" },
+          { "@type": "Organization", "name": "Faculty of Pain Management, College of Anaesthetists" },
           { "@type": "Organization", "name": "World Institute of Pain" }
         ],
         "sameAs": [

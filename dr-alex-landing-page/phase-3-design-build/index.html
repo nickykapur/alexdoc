@@ -52,8 +52,8 @@
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "[PLACEHOLDER: opening time]",
-            "closes": "[PLACEHOLDER: closing time]"
+            "opens": "08:00",
+            "closes": "19:00"
           }
         ],
         "sameAs": [
@@ -67,6 +67,11 @@
         "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#physician",
         "name": "Dr Aliaksandr Mudrakouski",
         "medicalSpecialty": "PainMedicine",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "Irish Medical Council registration number",
+          "value": "230380"
+        },
         "worksFor": { "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#clinic" },
         "url": "https://www.[PLACEHOLDER-DOMAIN].ie/",
         "hospitalAffiliation": {
@@ -79,7 +84,7 @@
           }
         },
         "memberOf": [
-          { "@type": "Organization", "name": "Faculty of Pain Medicine, College of Anaesthesiologists of Ireland" },
+          { "@type": "Organization", "name": "Faculty of Pain Management, College of Anaesthetists" },
           { "@type": "Organization", "name": "World Institute of Pain" }
         ],
         "sameAs": [
@@ -285,6 +290,7 @@
         <div class="hero-copy">
           <p class="hero-eyebrow">Dr Aliaksandr Mudrakouski</p>
           <p class="hero-credentials">FFPMCAI &middot; FIPP &amp; CIPS (World Institute of Pain) &middot; European Diploma Regional Anaesthesia</p>
+          <p class="hero-registration">Registered with the Irish Medical Council as a Pain Management Specialist &middot; IMC Reg. No. 230380</p>
           <h1>Pain Management Care in Dublin</h1>
           <p class="hero-subhead">Consultant-led interventional pain management at Beaumont Private Clinic &mdash; spinal and joint injections, radiofrequency ablation, PRP and nerve blocks.</p>
           <div class="hero-actions">
@@ -325,7 +331,8 @@
           <p>He has been working as a Pain Management Consultant at Beaumont Hospital, Dublin, since 2017.</p>
           <h3>Qualifications</h3>
           <ul class="cred-list">
-            <li>Fellow of the Faculty of Pain Medicine, College of Anaesthesiologists of Ireland</li>
+            <li>Registered with the Irish Medical Council as a Pain Management Specialist (IMC Reg. No. 230380)</li>
+            <li>Fellow of the Faculty of Pain Management, College of Anaesthetists (FFPMCAI)</li>
             <li>Fellow of the World Institute of Pain (FIPP and CIPS, WIP)</li>
             <li>European Diploma in Regional Anaesthesia</li>
           </ul>
@@ -455,11 +462,13 @@
         <p>Consultations are available to patients with private health insurance, including:</p>
         <ul class="insurer-list">
           <li>VHI</li>
-          <li>Laya Healthcare</li>
-          <li>Irish Life Health</li>
+          <li>Laya</li>
+          <li>Irish Life</li>
+          <li>POMA</li>
+          <li>GMA</li>
           <li>Glo Health</li>
         </ul>
-        <p class="fine-print">[PLACEHOLDER: confirm this insurer list is accurate and current, and confirm whether self-paying / GP-referral-only patients are also accepted, before launch.]</p>
+        <p>Self-paying patients are also accepted.</p>
       </div>
     </section>
 
@@ -499,7 +508,7 @@
         <div class="contact-details">
           <p class="eyebrow">Get in Touch</p>
           <h2>Contact &amp; Booking</h2>
-          <p>To book a consultation, please contact Sasha, Dr Mudrakouski&rsquo;s secretary, by phone or email, or use the form. <span class="placeholder-inline">[PLACEHOLDER: confirm whether a GP referral is required, or whether patients may self-refer]</span></p>
+          <p>To book a consultation, please contact Sasha, Dr Mudrakouski&rsquo;s secretary, by phone or email, or use the form. A GP referral is not required, though it is desirable. Self-referred patients are also accepted.</p>
 
           <ul class="contact-list">
             <li>
@@ -512,6 +521,10 @@
             </li>
             <li>
               <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+              <span><a href="tel:+353868239362">086 823 9362</a><br><span class="contact-note">Dr Mudrakouski</span></span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
               <span><a href="tel:+35318375400">01 837 5400</a><br><span class="contact-note">Clinic reception</span></span>
             </li>
             <li>
@@ -520,12 +533,9 @@
             </li>
             <li>
               <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
-              <span class="placeholder-inline">[PLACEHOLDER: opening hours]</span>
+              <span>8:00 &ndash; 19:00<br><span class="contact-note">Flexible times and days available by arrangement</span></span>
             </li>
           </ul>
-          <!-- NOTE: the consultant's direct mobile (086 823 9362) was supplied but is deliberately
-               NOT published here. A personal mobile on a public page is permanently exposed to
-               scrapers and cold callers, and that is hard to undo. Confirm if you want it added. -->
         </div>
 
         <form class="contact-form" id="contact-form" novalidate>

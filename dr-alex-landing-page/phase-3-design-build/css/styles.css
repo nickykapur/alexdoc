@@ -289,6 +289,12 @@ h3 { font-size: 1.28rem; margin-bottom: 0.5rem; letter-spacing: 0; }
   color: rgba(255, 255, 255, 0.92);   /* credentials are a trust signal — keep them legible */
   margin-bottom: 1.25rem;
 }
+.hero-registration {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.25rem;
+}
 .hero-subhead {
   font-size: 1.15rem;
   color: rgba(255, 255, 255, 0.93);

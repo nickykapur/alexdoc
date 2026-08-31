@@ -227,3 +227,34 @@ UPMC reference site.
 **Still not supplied:** the three procedure images (spinal injections, radiofrequency ablation,
 joint ablation). For clinical photographs, confirm patient consent and image licensing before
 publishing — an obligation the portrait does not carry.
+
+
+---
+
+## Client Confirmations Applied — 2026-08-17
+
+Dr Mudrakouski replied with the outstanding details. All applied and verified in the rendered page.
+
+| Item | Result |
+|---|---|
+| IMC registration | Registered as a Pain Management Specialist, IMC Reg. No. 230380 — hero, About, and schema `identifier` |
+| FFPMCAI | Confirmed. His wording ("Fellow Faculty Pain Management, College of Anaesthetists") now used verbatim |
+| GP referral | Not required but desirable; self-referred patients accepted |
+| Opening hours | 8:00–19:00, flexible times and days by arrangement |
+| Phone numbers | Both published: Sasha (secretary) 085 713 3548 and Dr Mudrakouski 086 823 9362 |
+| Insurers | VHI, Laya, Irish Life, POMA, GMA, Glo Health, plus self-paying |
+
+**Two things he did not specify, resolved by assumption and flagged:**
+
+1. **Which days.** He gave 8:00–19:00 and "flexible days possible" but not a working week. The
+   schema states Monday–Friday; the page says flexible days are available by arrangement. If
+   weekend clinics run, the schema needs updating — it feeds Google's opening-hours display.
+2. **"VHI, LAYA Irish Life, POMA, GMA, Glo Health"** was read as six insurers, with Laya and Irish
+   Life separate, matching the earlier draft. If Laya and Irish Life were meant as one entry, the
+   list needs correcting.
+
+**Not independently verified:** IMC Reg. No. 230380 was taken as supplied. The IMC register is
+public and this is worth one spot-check before launch — a wrong registration number on a doctor's
+site is a serious error, and the build environment has no outbound access to check it.
+
+The `.hero-registration` line was measured at 5.56:1 against the teal band, clearing WCAG AA.

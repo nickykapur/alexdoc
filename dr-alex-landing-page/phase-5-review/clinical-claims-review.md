@@ -67,13 +67,19 @@ than final approved copy.)
 
 ## 4. Wording standardised for an Irish audience
 
-- "Fellow Pain Faculty Irish College of Anaesthetist" was published as **"Fellow of the Faculty of
-  Pain Medicine, College of Anaesthesiologists of Ireland"** — the body's current name. **Please
-  confirm this is the correct title of the fellowship**, since qualifications must be stated
-  accurately.
-- Post-nominals in the hero are shown as "FFPMCAI · FIPP & CIPS (World Institute of Pain) ·
-  European Diploma Regional Anaesthesia". **Confirm FFPMCAI is the correct post-nominal**, as it
-  was inferred from the fellowship name rather than supplied directly.
+- **RESOLVED 2026-08-17.** Dr Mudrakouski confirmed the post-nominal **FFPMCAI** and gave the
+  fellowship as "Fellow Faculty Pain Management, College of Anaesthetists". His wording is now
+  used verbatim on the page and in the schema, replacing the earlier guess ("Faculty of Pain
+  Medicine, College of Anaesthesiologists of Ireland").
+  *One point still worth a glance:* the body's registered name is the College of Anaesthesiologists
+  of Ireland, and its pain faculty is commonly styled the Faculty of Pain Medicine. His wording has
+  been used because he is the fellow and the authority on his own credential — but if the formal
+  title is wanted for accuracy, it is a one-line change.
+- **IMC registration added.** Registered with the Irish Medical Council as a Pain Management
+  Specialist, IMC Reg. No. **230380**, shown in the hero, the About qualifications list, and as a
+  schema `identifier`. Supplied by Dr Mudrakouski; **not independently verified against the public
+  IMC register** — worth one spot-check before launch, since a wrong registration number on a
+  practice site is a serious error.
 
 ---
 
@@ -92,22 +98,26 @@ If any of these are in fact offered, they should be added back with his own desc
 
 ## 6. Contact detail withheld pending confirmation
 
-The consultant's direct mobile (**086 823 9362**) was supplied but is **deliberately not
-published**. A personal mobile number on a public web page is permanently harvestable by scrapers
-and cold-callers, and cannot be un-published once indexed. The secretary's line and the clinic
-reception number are published instead.
-
-**Confirm whether the direct mobile should be public.** It is a one-line change either way.
+**RESOLVED 2026-08-17.** Dr Mudrakouski explicitly asked for both numbers to be published, so the
+direct mobile (**086 823 9362**) is now live alongside the secretary's line and clinic reception.
+The scraping concern raised earlier still stands as a fact, but it is now his informed decision
+rather than an open question.
 
 ---
 
 ## Still outstanding
 
-- [ ] Opening hours — not supplied; still a placeholder on the page and in the schema
-- [ ] Insurer list (VHI, Laya, Irish Life Health, Glo Health) — carried over from the original
-      draft and **never confirmed**. These are currently displayed as accepted insurers, which is a
-      factual claim about the practice. Confirm or remove.
-- [ ] GP referral policy — whether patients may self-refer
+- [x] **Opening hours — confirmed 2026-08-17:** 8:00 to 19:00, with flexible times and days by
+      arrangement. Live on the page and in the schema.
+      *Note:* he gave hours but not which days. The schema states Monday–Friday as the standard
+      assumption, and the page adds "flexible times and days available by arrangement". If weekend
+      clinics run, the schema should say so — it feeds Google's opening-hours display.
+- [x] **Insurer list — confirmed 2026-08-17:** VHI, Laya, Irish Life, POMA, GMA, Glo Health, and
+      self-paying patients accepted. His note read "VHI, LAYA Irish Life, POMA, GMA, Glo Health";
+      this was read as Laya and Irish Life being two separate insurers, consistent with the earlier
+      draft. Worth a glance to confirm that reading.
+- [x] **GP referral policy — confirmed 2026-08-17:** a referral is not required but is desirable,
+      and self-referred patients are accepted. Live in the Contact section.
 - [ ] Domain name — every URL is `[PLACEHOLDER-DOMAIN]`
 - [x] **Portrait photograph — supplied and live.** Confirmed 2026-08-17 as Dr Mudrakouski's own
       personal photograph. He is both the subject and the practice principal, so there is no
