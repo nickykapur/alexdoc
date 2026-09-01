@@ -49,3 +49,31 @@ long-tail variants without diluting focus from the primary keyword.
 - Local SEO signals (NAP consistency, `MedicalClinic`/`Physician` schema, Google Business Profile
   `sameAs` link) matter at least as much as on-page copy for these queries — see
   `phase-4-seo-setup/` for implementation.
+
+---
+
+## UPDATE 2026-08-17 — Keywords supplied by Dr Mudrakouski
+
+These are the practice's own priority terms and now take precedence over the inferred list above.
+All nine are covered on the page; the section targeting each is noted.
+
+| Keyword | Where it is targeted |
+|---|---|
+| Spinal injections | Treatments &mdash; "Image-Guided Spinal Injections" (h3) |
+| Shoulder injection | Treatments &mdash; "Joint Injections — Hip, Knee & Shoulder" (h3); Conditions &mdash; Joint & Musculoskeletal Pain |
+| Knee injection | Treatments &mdash; "Joint Injections — Hip, Knee & Shoulder" (h3) |
+| Radiofrequency ablation | Treatments &mdash; "Radiofrequency Ablation (Rhizotomy)" (h3); also in meta description |
+| Back pain | Conditions &mdash; "Back Pain" (h3); hero subheading |
+| Neck pain | Conditions &mdash; "Neck Pain" (h3) |
+| Sciatica | Conditions &mdash; "Sciatica" (h3); Treatments &mdash; nerve blocks |
+| PRP / Platelet Rich Plasma | Treatments &mdash; "Regenerative Medicine — PRP & Prolotherapy" (h3); meta description |
+
+**Note on strategy:** these are mostly *treatment-intent* terms (someone who already knows they
+need an injection) rather than the *condition-intent* head term the original research assumed.
+That is arguably a better position &mdash; treatment terms convert better and are less contested
+than "pain management clinic Dublin". Volumes still need validating with a real research tool.
+
+**Location modifier gap:** none of the supplied keywords include "Dublin". Patients searching
+"knee injection Dublin" or "PRP Dublin" are the realistic target; the page covers this through the
+title tag, hero and address, but if condition-specific pages are ever built, each should pair the
+treatment with the location.

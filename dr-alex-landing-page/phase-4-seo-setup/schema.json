@@ -1,49 +1,66 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "MedicalClinic",
-      "@id": "https://www.dralexpainmanagement.ie/#clinic",
-      "name": "Dr. Alex Pain Management Clinic",
-      "image": "https://www.dralexpainmanagement.ie/assets/images/og-image-placeholder.svg",
-      "url": "https://www.dralexpainmanagement.ie/",
-      "telephone": "[PLACEHOLDER: clinic phone number, e.g. +353-1-000-0000]",
-      "email": "[PLACEHOLDER: clinic email address]",
-      "priceRange": "$$",
-      "medicalSpecialty": "Pain Management",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "[PLACEHOLDER: street address]",
-        "addressLocality": "Dublin",
-        "addressRegion": "Co. Dublin",
-        "postalCode": "[PLACEHOLDER: Eircode]",
-        "addressCountry": "IE"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#clinic",
+        "name": "Dr Aliaksandr Mudrakouski \u2014 Pain Management",
+        "image": "https://www.[PLACEHOLDER-DOMAIN].ie/assets/images/og-image-placeholder.svg",
+        "url": "https://www.[PLACEHOLDER-DOMAIN].ie/",
+        "telephone": "+353857133548",
+        "email": "amudrakouskirooms@beaumont.ie",
+        "medicalSpecialty": "PainMedicine",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Suite 5, Beaumont Private Clinic, Hospital Road, Beaumont Hospital",
+          "addressLocality": "Beaumont, Dublin 9",
+          "addressRegion": "Co. Dublin",
+          "postalCode": "D09 Y177",
+          "addressCountry": "IE"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          }
+        ],
+        "sameAs": [
+          "[PLACEHOLDER: Google Business Profile URL]",
+          "[PLACEHOLDER: LinkedIn URL, if available]"
+        ],
+        "employee": { "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#physician" }
       },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "[PLACEHOLDER: opening time, e.g. 09:00]",
-          "closes": "[PLACEHOLDER: closing time, e.g. 17:00]"
-        }
-      ],
-      "sameAs": [
-        "[PLACEHOLDER: Google Business Profile URL]",
-        "[PLACEHOLDER: LinkedIn URL, if available]"
-      ],
-      "employee": { "@id": "https://www.dralexpainmanagement.ie/#physician" }
-    },
-    {
-      "@type": "Physician",
-      "@id": "https://www.dralexpainmanagement.ie/#physician",
-      "name": "Dr. Alex [PLACEHOLDER: surname]",
-      "medicalSpecialty": "Pain Management",
-      "worksFor": { "@id": "https://www.dralexpainmanagement.ie/#clinic" },
-      "url": "https://www.dralexpainmanagement.ie/",
-      "sameAs": [
-        "[PLACEHOLDER: LinkedIn URL, if available]",
-        "[PLACEHOLDER: Irish Medical Council register listing URL, if available]"
-      ]
-    }
-  ]
-}
+      {
+        "@type": "Physician",
+        "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#physician",
+        "name": "Dr Aliaksandr Mudrakouski",
+        "medicalSpecialty": "PainMedicine",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "Irish Medical Council registration number",
+          "value": "230380"
+        },
+        "worksFor": { "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#clinic" },
+        "url": "https://www.[PLACEHOLDER-DOMAIN].ie/",
+        "hospitalAffiliation": {
+          "@type": "Hospital",
+          "name": "Beaumont Hospital",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Beaumont, Dublin 9",
+            "addressCountry": "IE"
+          }
+        },
+        "memberOf": [
+          { "@type": "Organization", "name": "Faculty of Pain Management, College of Anaesthetists" },
+          { "@type": "Organization", "name": "World Institute of Pain" }
+        ],
+        "sameAs": [
+          "[PLACEHOLDER: LinkedIn URL, if available]",
+          "[PLACEHOLDER: Irish Medical Council register listing URL, if available]"
+        ]
+      }
+    ]
+  }
