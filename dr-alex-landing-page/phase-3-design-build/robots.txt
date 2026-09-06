@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.dralexpainmanagement.ie/sitemap.xml
+Sitemap: https://alexpainclinic.ie/sitemap.xml

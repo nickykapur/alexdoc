@@ -28,32 +28,32 @@ guideline.
 ## Canonical
 
 ```html
-<link rel="canonical" href="https://www.dralexpainmanagement.ie/">
+<link rel="canonical" href="https://alexpainclinic.ie/">
 ```
 
-`[PLACEHOLDER: this is a placeholder domain — replace every instance of
-https://www.dralexpainmanagement.ie/ across index.html and schema.json with the real production
-domain once it's registered/confirmed]`.
+**Confirmed 2026-08-17: the production domain is `alexpainclinic.ie`.** The canonical host is the
+apex (no `www`). Netlify must 301-redirect `www.alexpainclinic.ie` to the apex so only one host is
+indexed — two reachable hosts split ranking signals and can trigger duplicate-content handling.
 
 ## Open Graph
 
 | Tag | Value |
 |---|---|
 | `og:type` | `website` |
-| `og:title` | Pain Management Clinic Dublin \| Dr. Alex |
-| `og:description` | Consultant-led, evidence-based pain management in Dublin. Back pain, sciatica, nerve pain, injections and more. Book a consultation. |
-| `og:url` | https://www.dralexpainmanagement.ie/ |
+| `og:title` | Pain Management Clinic Dublin \| Dr Mudrakouski |
+| `og:description` | Consultant-led pain management at Beaumont Private Clinic, Dublin. Spinal injections, radiofrequency ablation, PRP and joint injections. |
+| `og:url` | https://alexpainclinic.ie/ |
 | `og:image` | /assets/images/og-image-placeholder.svg — **placeholder**, replace with a real 1200×630 JPG/PNG before launch |
 | `og:locale` | en_IE |
-| `og:site_name` | Dr. Alex Pain Management Clinic |
+| `og:site_name` | Dr Aliaksandr Mudrakouski — Pain Management |
 
 ## Twitter Card
 
 | Tag | Value |
 |---|---|
 | `twitter:card` | `summary_large_image` |
-| `twitter:title` | Pain Management Clinic Dublin \| Dr. Alex |
-| `twitter:description` | Consultant-led, evidence-based pain management in Dublin. Book a consultation with Dr. Alex. |
+| `twitter:title` | Pain Management Clinic Dublin \| Dr Mudrakouski |
+| `twitter:description` | Consultant-led pain management at Beaumont Private Clinic, Dublin. Book a consultation. |
 | `twitter:image` | /assets/images/og-image-placeholder.svg — same placeholder note as above |
 
 ## Robots

@@ -118,7 +118,13 @@ rather than an open question.
       draft. Worth a glance to confirm that reading.
 - [x] **GP referral policy — confirmed 2026-08-17:** a referral is not required but is desirable,
       and self-referred patients are accepted. Live in the Contact section.
-- [ ] Domain name — every URL is `[PLACEHOLDER-DOMAIN]`
+- [x] **Domain confirmed 2026-08-17: `alexpainclinic.ie`.** Wired through the canonical, Open Graph
+      and Twitter tags, both JSON-LD nodes, `sitemap.xml` and `robots.txt`. Canonical host is the
+      apex (no `www`) — Netlify must 301 `www` to it so only one host is indexed.
+      *Caught during this pass:* `sitemap.xml` and `robots.txt` were still advertising
+      `dralexpainmanagement.ie`, an abandoned placeholder from the first draft that was missed when
+      the rest moved to `[PLACEHOLDER-DOMAIN]`. Had that shipped, the sitemap would have pointed
+      crawlers at a domain the practice does not own.
 - [x] **Portrait photograph — supplied and live.** Confirmed 2026-08-17 as Dr Mudrakouski's own
       personal photograph. He is both the subject and the practice principal, so there is no
       third-party consent or licensing question. Cleared for publication.
