@@ -1,185 +1,147 @@
-# Content Draft — Dr. Alex Pain Management Landing Page
+# Content Draft — Dr Aliaksandr Mudrakouski, Pain Management
 
-Tone: natural, reassuring, professional. No outcome/efficacy claims ("guaranteed," "proven,"
-"pain-free in weeks," etc.) per Medical Council of Ireland advertising guidelines. Anywhere real
-information is missing, a `[PLACEHOLDER: ...]` marker is used — these must be resolved with real
-details before launch (see `phase-5-review/revision-log.md` for the outstanding list).
+**Phase 2 deliverable: the written content, for review.**
+Last updated 2026-08-17. This now matches the built page exactly.
+
+Tone: factual and reassuring, without outcome or efficacy claims, in line with Medical Council of
+Ireland guidance on advertising by registered practitioners. Anything still needing confirmation
+is marked `[TO CONFIRM]`.
 
 ---
 
 ## 1. Hero
 
-**H1:** Pain Management Care in Dublin with Dr. Alex `[PLACEHOLDER: Dr. Alex's surname]`
+**Name:** Dr Aliaksandr Mudrakouski
+**Credentials:** FFPMCAI · FIPP & CIPS (World Institute of Pain) · European Diploma Regional Anaesthesia
+**Registration:** Registered with the Irish Medical Council as a Pain Management Specialist · IMC Reg. No. 230380
 
-**Subheading:** Consultant-led, evidence-based pain management for back pain, sciatica, nerve
-pain and chronic pain conditions — with a clear GP referral pathway.
+**H1:** Pain Management Care in Dublin
 
-**Primary CTA:** Book a Consultation
-**Secondary CTA (click-to-call, mobile-prominent):** Call `[PLACEHOLDER: clinic phone number]`
+**Subheading:** Consultant-led interventional pain management at Beaumont Private Clinic — spinal
+and joint injections, radiofrequency ablation, PRP and nerve blocks.
 
----
-
-## 2. About Dr. Alex
-
-**H2:** About Dr. Alex `[PLACEHOLDER: surname]`
-
-Dr. Alex `[PLACEHOLDER: surname]` is a consultant specialising in pain management, based in
-Dublin. `[PLACEHOLDER: one or two sentences on qualifications, e.g. medical degree, relevant
-fellowships/diplomas such as FCAI, FFPMCAI, or equivalent — to be confirmed by Dr. Alex]`
-
-Dr. Alex holds a consultant post at `[PLACEHOLDER: hospital affiliation, e.g. "St. X Hospital,
-Dublin"]` and has `[PLACEHOLDER: years of experience, e.g. "over 15 years"]` of experience in
-diagnosing and managing acute and chronic pain conditions.
-
-Areas of special interest include `[PLACEHOLDER: special interests, e.g. "minimally invasive
-spinal interventions, neuropathic pain, and complex regional pain syndrome"]`.
-
-Care is provided on a consultant-led basis, working closely with referring GPs, physiotherapists,
-and other specialists to build a treatment plan around each patient.
+**Buttons:** Book a Consultation · 085 713 3548 (click-to-call)
 
 ---
 
-## 3. Conditions Treated
+## 2. About
 
-**H2:** Conditions We Treat
+**H2:** About Dr Mudrakouski
 
-**H3: Back Pain**
-Assessment and management of acute and chronic lower and upper back pain, including
-disc-related and mechanical causes.
+Dr Aliaksandr Mudrakouski completed his training in Anaesthesia, Intensive Care Medicine and Pain
+Management in 2015. He completed further fellowship training in Pain Medicine at St Vincent's
+University Hospital, Dublin, and Leeds Teaching Hospitals, UK.
 
-**H3: Sciatica**
-Diagnosis and treatment of sciatic nerve pain radiating from the lower back into the leg,
-including image-guided injection options where appropriate.
+He has been working as a Pain Management Consultant at Beaumont Hospital, Dublin, since 2017.
 
-**H3: Neck Pain**
-Management of chronic and acute neck pain, including pain related to cervical spine conditions.
+**Qualifications**
+- Registered with the Irish Medical Council as a Pain Management Specialist (IMC Reg. No. 230380)
+- Fellow of the Faculty of Pain Management, College of Anaesthetists (FFPMCAI)
+- Fellow of the World Institute of Pain (FIPP and CIPS, WIP)
+- European Diploma in Regional Anaesthesia
 
-**H3: Migraines & Headaches**
-Assessment and management of chronic migraine and headache disorders, including
-interventional options for suitable patients.
-
-**H3: Fibromyalgia**
-A structured approach to fibromyalgia and widespread chronic pain, combining medical management
-with referral to allied specialists as needed.
-
-**H3: Nerve Pain & CRPS**
-Management of neuropathic pain and Complex Regional Pain Syndrome (CRPS), including nerve block
-and neuromodulation options where clinically appropriate.
-
-**H3: Post-Surgical Pain**
-Support for patients experiencing persistent pain following surgery, working alongside surgical
-teams on a coordinated pain management plan.
-
-**H3: Joint Pain**
-Assessment and management of chronic joint pain, including image-guided joint injections where
-appropriate.
+**Areas of Special Interest**
+- Management of persistent spinal pain (back and neck)
+- Musculoskeletal pain and pain in joints
+- Regenerative methods and prolotherapy
+- Neuropathic pain and Complex Regional Pain Syndrome
+- Facial pain, trigeminal neuralgia and headaches
+- Interventional pain therapies
 
 ---
 
-## 4. Treatments Offered
+## 3. Conditions We Treat — nine
 
-**H2:** Treatments Offered
+1. **Back Pain** — acute and chronic lower and upper back pain, including disc-related and mechanical causes.
+2. **Neck Pain** — chronic and acute neck pain, including pain related to cervical spine conditions.
+3. **Sciatica** — sciatic nerve pain radiating from the lower back into the leg, including image-guided injection options where appropriate.
+4. **Joint & Musculoskeletal Pain** — shoulder, knee and hip pain, myofascial pain, arthritis, tendinitis and bursitis. Image-guided injections and joint nerve ablative procedures where clinically appropriate.
+5. **Nerve Pain & CRPS** — neuropathic pain and Complex Regional Pain Syndrome, including nerve block and neuromodulation options where clinically appropriate.
+6. **Post-Shingles Pain (PHN)** — postherpetic neuralgia, managed with a multimodal approach combining nerve-calming medications, topical treatments, and sometimes interventional procedures.
+7. **Chronic Post-Surgical Pain** — discomfort persisting at least three months after an operation, often combining dull aching tissue pain with sharp nerve-related sensations near the surgical site.
+8. **Facial Pain & Trigeminal Neuralgia** — many potential causes, from dental and sinus problems to nerve disorders or jaw joint (TMJ) problems; professional evaluation is usually required to identify the cause.
+9. **Cervicogenic Headache, Occipital Neuralgia & Migraine** — secondary headaches caused by neck problems, and occipital neuralgia from irritation or compression of the occipital nerves.
 
-**H3: Epidural Steroid Injections**
-Image-guided injections that deliver anti-inflammatory medication directly to the affected
-spinal area, used for suitable cases of back and leg pain.
+---
 
-**H3: Nerve Blocks**
-Targeted injections to interrupt pain signals from a specific nerve, used both diagnostically and
-as part of ongoing pain management.
+## 4. Treatments Offered — seven
 
-**H3: Radiofrequency Ablation**
-A minimally invasive procedure that uses heat generated by radio waves to reduce pain signals
-from specific nerves, considered for suitable chronic pain cases.
+1. **Image-Guided Spinal Injections** — selective nerve root blocks and epidural steroid injections, facet joint injections and blocks, sacroiliac joint injections, nerve and nerve plexus blocks.
+2. **Nerve Blocks & Pulsed Radiofrequency** — targeted injections to interrupt pain signals from a specific nerve, used diagnostically and in ongoing management of sciatica and nerve pain.
+3. **Radiofrequency Ablation (Rhizotomy)** — minimally invasive procedure using heat from radio waves to reduce pain signals from specific nerves in the neck and back.
+4. **Joint Injections — Hip, Knee & Shoulder** — medication delivered into or around a joint to reduce pain, swelling and inflammation. Options include corticosteroids, hyaluronic acid, or PRP, for arthritis, tendinitis and bursitis.
+5. **Regenerative Medicine — PRP & Prolotherapy** — supports the body's natural healing response in damaged joints, ligaments and tendons rather than relying on steroids. In PRP, the patient's own blood is drawn and separated in a centrifuge; the platelet-rich fraction is injected into the affected area.
+6. **Botulinum Toxin for Headache & Pain** — used in the management of chronic migraine and other headache disorders, and in selected neuropathic and musculoskeletal pain conditions.
+7. **Medication Management** — ongoing review and management of pain medication, with an emphasis on safe, evidence-based prescribing.
 
-**H3: Spinal Cord Stimulation**
-An implantable device option for carefully selected patients with chronic pain that has not
-responded to more conservative treatments, assessed on a case-by-case basis.
+*Footnote on the page:* not every treatment is suitable for every patient — suitability is assessed
+individually during consultation.
 
-**H3: Physiotherapy Referral**
-Coordinated referral to physiotherapy as part of a broader, multidisciplinary pain management
-plan.
-
-**H3: Medication Management**
-Ongoing review and management of pain medication, with an emphasis on safe, evidence-based
-prescribing.
-
-*Note: not every treatment is suitable for every patient — suitability is assessed on an
-individual basis during consultation.*
+> **Note on three claims that were held back.** The supplied copy included a PRP safety
+> superlative, comparative PRP trial figures, and a "very effective" claim for botulinum toxin.
+> These are not published, pending Dr Mudrakouski's sign-off — see
+> `phase-5-review/clinical-claims-review.md` for the exact original wording.
 
 ---
 
 ## 5. Insurance Partners
 
-**H2:** Insurance Partners
+VHI · Laya · Irish Life · POMA · GMA · Glo Health
 
-Consultations are available to patients with private health insurance, including:
-
-- VHI
-- Laya Healthcare
-- Irish Life Health
-- Glo Health
-
-`[PLACEHOLDER: confirm this insurer list is accurate and current, and confirm whether self-paying
-/ GP-referral-only patients are also accepted, before launch]`
+Self-paying patients are also accepted.
 
 ---
 
-## 6. Why Choose Us
+## 6. Why Choose This Practice
 
-**H2:** Why Choose This Practice
-
-- **Consultant-Led Care** — every patient is assessed and treated directly under consultant
-  supervision.
-- **Evidence-Based, Minimally Invasive Approach** — treatment plans follow current clinical
-  guidelines, favouring the least invasive appropriate option first.
+- **Consultant-Led Care** — every patient is assessed and treated directly under consultant supervision.
+- **Evidence-Based, Minimally Invasive Approach** — treatment plans follow current clinical guidelines, favouring the least invasive appropriate option first.
 - **Clear GP Referral Pathway** — a straightforward referral process for GPs and their patients.
-- **Flexible Clinic Times** — `[PLACEHOLDER: confirm actual clinic days/times to reference here,
-  e.g. "clinics available on weekday mornings and evenings"]`.
+- **Flexible Clinic Times** — `[TO CONFIRM: wording here still describes flexibility generically]`
 
 ---
 
-## 7. Contact / Booking
+## 7. Contact & Booking
 
-**H2:** Contact & Booking
+To book a consultation, contact Sasha, Dr Mudrakouski's secretary, by phone or email, or use the
+form. A GP referral is not required, though it is desirable. Self-referred patients are also
+accepted.
 
-**Address:** `[PLACEHOLDER: practice address]`
-**Phone:** `[PLACEHOLDER: clinic phone number]` (click-to-call enabled on mobile)
-**Email:** `[PLACEHOLDER: clinic email address]`
-**Opening Hours:** `[PLACEHOLDER: opening hours, e.g. "Mon–Fri, 9:00–17:00"]`
+| | |
+|---|---|
+| Address | Suite 5, Beaumont Private Clinic, Hospital Road, Beaumont Hospital, Beaumont, Dublin 9, D09 Y177 `[TO CONFIRM — see below]` |
+| Secretary | 085 713 3548 (Sasha) |
+| Dr Mudrakouski | 086 823 9362 |
+| Clinic reception | 01 837 5400 |
+| Email | amudrakouskirooms@beaumont.ie |
+| Hours | 8:00 – 19:00, flexible times and days by arrangement `[TO CONFIRM — see below]` |
 
-To book a consultation, please contact the clinic by phone or email, or use the form below.
-Referral from your GP is welcomed but not always required — `[PLACEHOLDER: confirm actual
-self-referral policy]`.
-
-**Contact form fields:** Name, Phone, Email, Message, GDPR consent checkbox
-("I consent to `[PLACEHOLDER: practice name]` storing and processing my details in order to
-respond to this enquiry, in line with the [Privacy Policy](#).")
+**Form fields:** Name · Phone · Email · Message · GDPR consent checkbox
 
 ---
 
 ## 8. Footer
 
-**Logo:** `[PLACEHOLDER: practice name/logo — currently using text "Dr. Alex Pain Management"]`
-
-**Quick nav links:** About · Conditions Treated · Treatments · Insurance · Contact
-
-**NAP (must exactly match Google Business Profile):**
-`[PLACEHOLDER: practice name]`
-`[PLACEHOLDER: practice address]`
-`[PLACEHOLDER: clinic phone number]`
-
-**Social links:** `[PLACEHOLDER: LinkedIn / Google Business Profile links, if available]`
-
-**Legal links:** Privacy Policy · Terms of Use · Cookie Policy
+Practice name, full address, secretary phone, quick navigation, and links to Privacy Policy,
+Terms of Use and Cookie Policy.
 
 ---
 
-## Compliance Check
+## Still to confirm
 
-- No outcome or efficacy claims used anywhere in this draft (no "guaranteed," "proven," "pain-free,"
-  or similar language).
-- No testimonials included, per brief — section intentionally omitted.
-- All unverified facts (address, phone, email, qualifications, hospital affiliation, years of
-  experience, special interests, opening hours, insurer list, referral policy, surname) are
-  explicitly flagged as placeholders above and must be confirmed by Dr. Alex before launch.
+- **Address.** Public directory listings give *Suite 26, Beaumont Road*; the site currently says
+  *Suite 5, Hospital Road*. These must match each other and the Google Business Profile.
+- **Opening hours.** His Beaumont Hospital profile states 08:00–17:30 with occasional Saturday
+  clinics; the site says 08:00–19:00.
+- **Qualifications.** His hospital profile also lists FCAI, which the site does not show.
+- **Bon Secours.** He is listed as a consultant there too; the site mentions only Beaumont.
+- **IMC Reg. No. 230380** — published as supplied, not yet checked against the public register.
+
+Detail on all five is in `phase-5-review/clinical-claims-review.md`.
+
+## Deliberately not included
+
+- **No patient testimonials.** Medical Council guidance restricts testimonial use by registered
+  practitioners.
+- **No outcome or efficacy claims** anywhere in the copy — no "guaranteed", "proven", "most
+  effective" or similar.
