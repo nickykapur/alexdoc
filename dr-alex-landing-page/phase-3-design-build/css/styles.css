@@ -467,9 +467,15 @@ h3 { font-size: 1.28rem; margin-bottom: 0.5rem; letter-spacing: 0; }
 }
 .form-row-checkbox a { color: var(--color-teal-700); }
 .contact-form .btn { width: 100%; justify-content: center; margin-top: 0.5rem; }
-.form-status { min-height: 1.2rem; margin: 0.85rem 0 0; font-weight: 600; font-size: 0.9rem; }
-.form-status.success { color: var(--color-teal-600); }
+/* Spam trap: removed from layout entirely rather than hidden with .sr-only,
+   which would still expose it to screen readers. display:none is correct here
+   precisely because no human should ever reach it. */
+.form-honeypot { display: none; }
+
+.form-status { min-height: 1.2rem; margin: 0.85rem 0 0; font-weight: 600; font-size: 0.95rem; }
+.form-status.success { color: var(--color-teal-700); }
 .form-status.error { color: var(--color-error); }
+.form-status a { color: inherit; text-decoration: underline; }
 
 /* ---------- Footer ---------- */
 .site-footer {

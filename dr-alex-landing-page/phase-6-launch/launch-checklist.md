@@ -38,21 +38,31 @@ the site is actually published.
 - [x] **Legal pages exist and are linked** — privacy, terms, cookies.
 - [x] **Portrait live and optimised** — 173 KB down to 26 KB.
 - [x] **No external scripts or fonts** — nothing to slow the page or leak visitor data.
-- [ ] **Contact form not connected.** It validates and confirms, but sends nowhere. **Blocking.**
+- [ ] **Contact form — wired to Formspree, but the endpoint ID is not set yet. Blocking.**
+      The code is done: it POSTs to Formspree, has a spam trap, re-enables the button after a
+      failure, and keeps what the patient typed so they can retry. One step remains — create the
+      form at formspree.io and paste the ID into `FORMSPREE_ID` in `js/script.js`.
+      **Until that is done the form refuses to accept enquiries and shows the phone numbers
+      instead.** That is deliberate: the earlier version displayed "your enquiry has been
+      received" without sending anything, so a patient was told the clinic would call and then
+      never heard from anyone. Nothing now claims success unless Formspree confirmed it.
 - [ ] **Legal pages are placeholders** — each needs proper legal/GDPR review.
 - [ ] **Social share image is a placeholder SVG** — should be a real 1200×630 JPG or PNG.
 - [ ] **No Lighthouse/PageSpeed run** — no browser tooling in the build environment.
 
 ## Launch steps, none started
 
-- [ ] Register **alexpainclinic.ie**
-- [ ] Connect the repository to Netlify (config is ready — `netlify.toml` sets the publish folder)
+- [x] Register **alexpainclinic.ie**
+- [x] Connect the repository to Netlify (config is ready — `netlify.toml` sets the publish folder)
+- [x] Point the registrar at Netlify's nameservers
+- [x] **Analytics decided and built** — Google Analytics 4 (`G-0BYKKVJ87K`), loaded only after the
+      visitor accepts, with the cookie policy rewritten to match.
+- [ ] **Create the Formspree form and set `FORMSPREE_ID`** — see the item above.
 - [ ] Redirect `www` to the apex so only one address is indexed
 - [ ] Confirm HTTPS certificate
-- [ ] Create and verify the **Google Business Profile** — the single highest-value step
+- [ ] Create and verify the **Google Business Profile** — the single highest-value step.
+      Instructions for Dr Mudrakouski are in `Google-Business-Profile-Setup-Dr-Mudrakouski.pdf`.
 - [ ] Verify in **Google Search Console** and submit the sitemap
-- [ ] Decide on analytics (note: Google Analytics needs a cookie banner and a rewritten cookie
-      policy; a cookieless tool avoids both)
 - [ ] Final pass on a real phone and desktop once live
 
 ## Optional, recommended after launch
@@ -68,7 +78,15 @@ the site is actually published.
 
 ## Summary
 
-**Content-complete and technically sound; not launch-ready.** Four things block launch: the
-domain is not registered, the contact form goes nowhere, the address conflict is unresolved, and
-three clinical claims await sign-off. The first two are practical; the second two need
-Dr Mudrakouski.
+**Live on `alexpainclinic.ie`, with analytics running. Three things still outstanding.**
+
+1. **The Formspree endpoint ID is not set**, so the form tells patients to phone instead of
+   accepting enquiries. A five-minute job, and the last purely practical blocker.
+2. **The address and opening-hours conflicts are unresolved** — the clinic's own listings say
+   Beaumont Road and 08:00–17:30; we were told Hospital Road and 08:00–19:00. This matters most
+   for the Google Business Profile: hours saying 19:00 against a building that shuts at 17:30
+   sends patients to a locked door.
+3. **Three clinical claims await Dr Mudrakouski's sign-off** (see
+   `phase-5-review/clinical-claims-review.md`).
+
+Items 2 and 3 need Dr Mudrakouski. Item 1 does not.
