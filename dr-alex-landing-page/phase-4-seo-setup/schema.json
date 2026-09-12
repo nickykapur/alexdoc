@@ -3,10 +3,10 @@
     "@graph": [
       {
         "@type": "MedicalClinic",
-        "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#clinic",
+        "@id": "https://alexpainclinic.ie/#clinic",
         "name": "Dr Aliaksandr Mudrakouski \u2014 Pain Management",
-        "image": "https://www.[PLACEHOLDER-DOMAIN].ie/assets/images/og-image-placeholder.svg",
-        "url": "https://www.[PLACEHOLDER-DOMAIN].ie/",
+        "image": "https://alexpainclinic.ie/assets/images/og-image-placeholder.svg",
+        "url": "https://alexpainclinic.ie/",
         "telephone": "+353857133548",
         "email": "amudrakouskirooms@beaumont.ie",
         "medicalSpecialty": "PainMedicine",
@@ -30,11 +30,11 @@
           "[PLACEHOLDER: Google Business Profile URL]",
           "[PLACEHOLDER: LinkedIn URL, if available]"
         ],
-        "employee": { "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#physician" }
+        "employee": { "@id": "https://alexpainclinic.ie/#physician" }
       },
       {
         "@type": "Physician",
-        "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#physician",
+        "@id": "https://alexpainclinic.ie/#physician",
         "name": "Dr Aliaksandr Mudrakouski",
         "medicalSpecialty": "PainMedicine",
         "identifier": {
@@ -42,8 +42,8 @@
           "name": "Irish Medical Council registration number",
           "value": "230380"
         },
-        "worksFor": { "@id": "https://www.[PLACEHOLDER-DOMAIN].ie/#clinic" },
-        "url": "https://www.[PLACEHOLDER-DOMAIN].ie/",
+        "worksFor": { "@id": "https://alexpainclinic.ie/#clinic" },
+        "url": "https://alexpainclinic.ie/",
         "hospitalAffiliation": {
           "@type": "Hospital",
           "name": "Beaumont Hospital",

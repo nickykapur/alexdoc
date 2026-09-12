@@ -118,7 +118,13 @@ rather than an open question.
       draft. Worth a glance to confirm that reading.
 - [x] **GP referral policy — confirmed 2026-08-17:** a referral is not required but is desirable,
       and self-referred patients are accepted. Live in the Contact section.
-- [ ] Domain name — every URL is `[PLACEHOLDER-DOMAIN]`
+- [x] **Domain confirmed 2026-08-17: `alexpainclinic.ie`.** Wired through the canonical, Open Graph
+      and Twitter tags, both JSON-LD nodes, `sitemap.xml` and `robots.txt`. Canonical host is the
+      apex (no `www`) — Netlify must 301 `www` to it so only one host is indexed.
+      *Caught during this pass:* `sitemap.xml` and `robots.txt` were still advertising
+      `dralexpainmanagement.ie`, an abandoned placeholder from the first draft that was missed when
+      the rest moved to `[PLACEHOLDER-DOMAIN]`. Had that shipped, the sitemap would have pointed
+      crawlers at a domain the practice does not own.
 - [x] **Portrait photograph — supplied and live.** Confirmed 2026-08-17 as Dr Mudrakouski's own
       personal photograph. He is both the subject and the practice principal, so there is no
       third-party consent or licensing question. Cleared for publication.
@@ -130,3 +136,79 @@ rather than an open question.
       not transmitted. **These are a separate question from the portrait:** clinical images may
       show patients or identifiable anatomy, so patient consent and image licensing must be
       confirmed before any of them is published.
+
+---
+
+## 7. DISCREPANCIES vs. Dr Mudrakouski's existing public listings — 2026-08-17
+
+A search for his name surfaced existing public profiles. **Several conflict with the details
+supplied for this site.** NAP (name/address/phone) consistency across the web is one of the
+strongest local-ranking signals, so these need resolving before launch — inconsistent listings
+actively work against the map-pack visibility this site is being built for.
+
+### Existing public presence found
+
+| Source | What it is |
+|---|---|
+| beaumont.ie/pages/consultants/621 | Beaumont Hospital consultant profile |
+| beaumontprivate.ie/dr-alexander-mudrakouski | Beaumont Private Clinic profile |
+| vhi.ie directory-of-consultants/consultant-details/13459 | VHI consultant directory |
+| bonsecours.ie/consultants/aliaksandr-mudrakouski | **Bon Secours** consultant listing |
+| irish-pages.ie (two listings) | Business directory |
+
+### Conflicts to resolve
+
+1. **Address — the most serious.** The directory listings give
+   **Suite 26, Beaumont Private Clinic, Beaumont Road, Dublin, D09 Y177**.
+   He supplied **Suite 5, Beaumont Private Clinic, Hospital Road**. Two differences: the suite
+   number and the road name. The Eircode matches. **Which is current?** The site, the Google
+   Business Profile and every directory must agree exactly.
+
+2. **Opening hours.** His Beaumont profile states **Monday–Friday 08:00–17:30, with occasional
+   Saturday morning clinics**. He told us **08:00–19:00**. Our schema currently says 08:00–19:00,
+   Monday–Friday. If the older listing is stale, it should be corrected at source; if it is
+   current, our page is wrong.
+
+3. **Qualifications.** His Beaumont profile lists **"Fellow Pain Faculty ICA, FCAI, FIPP, CIPPS,
+   EDRA"**. Our page shows FFPMCAI, FIPP & CIPS, EDRA. Differences: **FCAI** appears in his
+   official profile but not on our page; the faculty fellowship is styled "Fellow Pain Faculty
+   ICA" rather than FFPMCAI; and CIPPS vs CIPS. He confirmed FFPMCAI directly, so his instruction
+   stands — but the mismatch with his own hospital profile is worth reconciling.
+
+4. **Second hospital affiliation.** He is listed as a consultant at **Bon Secours** as well as
+   Beaumont. Our page and schema mention only Beaumont. If he practises at both, adding it
+   strengthens the profile and matches the public record.
+
+### Action
+
+Ask Dr Mudrakouski to confirm the current suite number and road, the true opening hours, and
+whether Bon Secours should be included. Then align the site, the Google Business Profile, and
+ideally correct the stale directory entries. The Beaumont Private and VHI profile URLs are also
+good candidates for the schema `sameAs` array, which currently holds placeholders.
+
+---
+
+## 8. Address verified online — 2026-09-12
+
+Checked against Beaumont Private Clinic's own site and Irish business directories.
+
+**Eircode: D09 Y177 — CONFIRMED.** The clinic's official address is Beaumont Hospital, Beaumont
+Road, Dublin 9, **D09 Y177**. The "D09U177" given in his later message was a typo; the site
+already carried Y177 and needs no change.
+
+**Reception number 01 837 5400 — CONFIRMED** as Beaumont Private Clinic's published number.
+
+**Two things still worth resolving:**
+
+1. **Road name.** The clinic's official listings give **Beaumont Road**; Dr Mudrakouski told us
+   **Hospital Road**, and one directory does list "Hospital Rd". The clinic sits on the hospital
+   grounds, so both names circulate. His answer has been kept on the site, but for the Google
+   Business Profile, use whatever Google Maps autocompletes for the building — Google matches
+   against its own address record, and fighting it causes verification problems.
+
+2. **Opening hours conflict is now confirmed, not just suspected.** Beaumont Private Clinic's own
+   published hours are **Monday–Friday 08:00–17:30, with occasional Saturday morning clinics** —
+   the same as his hospital profile, and not the 08:00–19:00 he gave us. His personal clinic may
+   well run later than the building's stated hours, and his instruction stands, but **a Google
+   listing saying 19:00 when the building shuts at 17:30 will produce patients arriving to a
+   locked door.** Worth one more question before the listing goes live.

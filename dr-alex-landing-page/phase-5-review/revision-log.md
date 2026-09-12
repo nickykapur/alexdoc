@@ -22,7 +22,7 @@ All items below are marked inline in `phase-2-content/content-draft.md` and
 - [ ] Clinic phone number (used in header click-to-call, hero CTA, contact section, footer, and `tel:` links)
 - [ ] Clinic email address (used in contact section, footer, and `mailto:` link)
 - [ ] Opening hours (contact section and JSON-LD `openingHoursSpecification`)
-- [ ] Confirmed production domain (placeholder used throughout: `https://www.dralexpainmanagement.ie/`)
+- [ ] Confirmed production domain (placeholder used throughout: `https://alexpainclinic.ie/`)
 
 ### About Dr. Alex
 - [ ] Qualifications (medical degree, relevant fellowships/diplomas)
