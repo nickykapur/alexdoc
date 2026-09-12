@@ -12,13 +12,12 @@
 (function () {
   "use strict";
 
-  // ---- SET THIS ----------------------------------------------------------
-  // Replace with the Measurement ID from Google Analytics (Admin → Data
-  // Streams → your web stream). It looks like "G-ABC1234567".
-  // While it stays as the placeholder, no analytics load at all and the
-  // banner is not shown — so the site is safe to deploy before GA is set up.
-  var GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
-  // ------------------------------------------------------------------------
+  // Google Analytics 4 Measurement ID for alexpainclinic.ie.
+  // Set 2026-09-12. Google's own install snippet is deliberately NOT used —
+  // it loads gtag.js immediately on page load, before the visitor has been
+  // asked anything. Only the ID is taken from it; the loading is done below,
+  // after consent.
+  var GA_MEASUREMENT_ID = "G-0BYKKVJ87K";
 
   var STORAGE_KEY = "apc-cookie-consent";
   var PLACEHOLDER_ID = "G-XXXXXXXXXX";
