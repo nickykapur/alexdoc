@@ -46,9 +46,12 @@ All items below are marked inline in `phase-2-content/content-draft.md` and
       support as a social-share image across platforms (Facebook, LinkedIn, Twitter/X, iMessage)
 
 ### Functional
-- [ ] Wire the contact form to a real form-handling service or backend endpoint — it currently
-      only validates client-side and shows a confirmation message without sending any data
-      anywhere (see `phase-3-design-build/js/script.js`)
+- [ ] **Set `FORMSPREE_ID` in `phase-3-design-build/js/script.js`.** The form is wired to
+      Formspree; only the endpoint ID is missing. Until it is set, the form declines enquiries and
+      shows the clinic's phone numbers.
+      *Fixed on the way here:* the form previously displayed "your enquiry has been received"
+      while sending nothing at all — a patient was told the clinic would be in touch and then
+      never contacted. No path now reports success unless the server confirmed it.
 - [ ] `privacy.html`, `terms.html`, and `cookies.html` are placeholder legal pages only —
       each needs proper legal/GDPR review before launch (each is flagged inline)
 - [ ] Social links in the footer are placeholders

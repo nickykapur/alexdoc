@@ -566,9 +566,28 @@
             <label for="consent">I consent to this practice storing and processing my details in order to respond to this enquiry, in line with the <a href="privacy.html">Privacy Policy</a>.</label>
           </div>
 
+          <!-- Subject line for the notification email the clinic receives. -->
+          <input type="hidden" name="_subject" value="Website booking enquiry">
+
+          <!-- Spam trap. Bots fill in every field they find; real patients never
+               see this one, so anything arriving with it set is discarded by
+               Formspree. Hidden from screen readers as well as from sight. -->
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="_gotcha">Leave this field empty</label>
+            <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
           <button type="submit" class="btn btn-primary btn-lg">Send Enquiry</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-          <p class="fine-print">[PLACEHOLDER: wire this form to the clinic's chosen form-handling service (e.g. Formspree, a booking system, or a server-side endpoint) before launch — it currently only validates and confirms client-side.]</p>
+          <noscript>
+            <p class="form-status error">This form needs JavaScript to send your enquiry. Please
+            phone the clinic instead &mdash; Sasha (secretary) on
+            <a href="tel:+353857133548">085&nbsp;713&nbsp;3548</a>, Dr Mudrakouski on
+            <a href="tel:+353868239362">086&nbsp;823&nbsp;9362</a>, or reception on
+            <a href="tel:+353018375400">01&nbsp;837&nbsp;5400</a>.</p>
+          </noscript>
+          <p class="fine-print">Please do not include detailed medical information in this form. If
+          your pain is severe or worsening rapidly, contact your GP or the emergency department.</p>
         </form>
       </div>
     </section>
