@@ -64,10 +64,21 @@ the site is actually published.
 - [x] Redirect `www` to the apex so only one address is indexed — **confirmed 2026-10-07.**
       `www.alexpainclinic.ie` is listed as redirecting automatically to the primary domain, which
       matches the canonical tag (apex, no `www`).
-- [ ] Confirm HTTPS certificate — not yet verified visually.
+- [x] Confirm HTTPS certificate — **confirmed 2026-10-07.** `https://alexpainclinic.ie/sitemap.xml`
+      loads over HTTPS on a mobile browser with no certificate warning. The same check confirmed
+      the sitemap deploys correctly and returns valid XML.
+- [x] Verify in **Google Search Console** — verified 2026-10-07 as a Domain property via the DNS
+      TXT record. A `google-site-verification` meta tag is also live in `index.html` as a second,
+      independent verification route; leave it in place.
+- [ ] Submit the sitemap in Search Console. **Note for whoever does this:** the property is a
+      Domain property, so the Sitemaps field needs the full URL
+      (`https://alexpainclinic.ie/sitemap.xml`). A bare `sitemap.xml` is rejected as an invalid
+      sitemap URL — that shorthand only works on a URL-prefix property.
+- [ ] Request indexing for `https://alexpainclinic.ie/` via URL Inspection
+- [ ] Link GA4 to Search Console (GA4 → Admin → Product links → Search Console links) so query
+      data and on-site behaviour sit together. It only collects from the day it is linked.
 - [ ] Create and verify the **Google Business Profile** — the single highest-value step.
       Instructions for Dr Mudrakouski are in `Google-Business-Profile-Setup-Dr-Mudrakouski.pdf`.
-- [ ] Verify in **Google Search Console** and submit the sitemap
 - [ ] Final pass on a real phone and desktop once live
 
 ## Optional, recommended after launch
