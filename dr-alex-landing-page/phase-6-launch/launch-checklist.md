@@ -54,12 +54,17 @@ the site is actually published.
 
 - [x] Register **alexpainclinic.ie**
 - [x] Connect the repository to Netlify (config is ready — `netlify.toml` sets the publish folder)
-- [x] Point the registrar at Netlify's nameservers
+- [x] Point the registrar at Netlify's nameservers — **confirmed 2026-10-07.** Netlify's domain
+      panel shows `alexpainclinic.ie` as Primary domain with Netlify DNS active, so the delegation
+      from LetsHost took effect. LetsHost now only holds the registration; DNS records (including
+      any verification TXT) are managed in Netlify.
 - [x] **Analytics decided and built** — Google Analytics 4 (`G-0BYKKVJ87K`), loaded only after the
       visitor accepts, with the cookie policy rewritten to match.
 - [ ] **Create the Formspree form and set `FORMSPREE_ID`** — see the item above.
-- [ ] Redirect `www` to the apex so only one address is indexed
-- [ ] Confirm HTTPS certificate
+- [x] Redirect `www` to the apex so only one address is indexed — **confirmed 2026-10-07.**
+      `www.alexpainclinic.ie` is listed as redirecting automatically to the primary domain, which
+      matches the canonical tag (apex, no `www`).
+- [ ] Confirm HTTPS certificate — not yet verified visually.
 - [ ] Create and verify the **Google Business Profile** — the single highest-value step.
       Instructions for Dr Mudrakouski are in `Google-Business-Profile-Setup-Dr-Mudrakouski.pdf`.
 - [ ] Verify in **Google Search Console** and submit the sitemap
