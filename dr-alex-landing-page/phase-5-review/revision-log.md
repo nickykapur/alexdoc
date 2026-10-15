@@ -42,8 +42,9 @@ All items below are marked inline in `phase-2-content/content-draft.md` and
 - [ ] Google Business Profile URL (JSON-LD `sameAs`)
 - [ ] LinkedIn URL, if available (JSON-LD `sameAs`)
 - [ ] Irish Medical Council register listing URL, if available (JSON-LD `Physician.sameAs`)
-- [ ] Replace `og-image-placeholder.svg` with a real 1200×630 JPG/PNG — SVG has inconsistent
-      support as a social-share image across platforms (Facebook, LinkedIn, Twitter/X, iMessage)
+- [x] **Social share image — done 2026-10-15.** `og-image.png`, a real 1200×630 PNG rendered in
+      the site's own teal/gold/serif identity with the portrait, name, role, clinic and domain.
+      The placeholder SVG is deleted. `og:image:width`, `:height` and `:alt` added alongside it.
 
 ### Functional
 - [ ] **Set `FORMSPREE_ID` in `phase-3-design-build/js/script.js`.** The form is wired to
@@ -52,9 +53,19 @@ All items below are marked inline in `phase-2-content/content-draft.md` and
       *Fixed on the way here:* the form previously displayed "your enquiry has been received"
       while sending nothing at all — a patient was told the clinic would be in touch and then
       never contacted. No path now reports success unless the server confirmed it.
-- [ ] `privacy.html`, `terms.html`, and `cookies.html` are placeholder legal pages only —
-      each needs proper legal/GDPR review before launch (each is flagged inline)
-- [ ] Social links in the footer are placeholders
+- [x] **Legal pages rewritten as real policies — 2026-10-15.** The placeholder notices are gone.
+      Privacy now covers controller identity, exactly what the site collects and when, Formspree
+      as processor with the non-EEA transfer, GA4, retention, GDPR rights and the DPC complaint
+      route. Terms covers not-medical-advice, no doctor–patient relationship, enquiries vs
+      appointments, IP, liability, IMC registration and Irish governing law.
+      **Still worth a solicitor's / DPO's eye before relying on them** — they describe the site
+      accurately, but a medical practice is exactly the case where a professional read is cheap
+      insurance. Two points genuinely need the practice's own answer rather than drafting:
+      the retention period for enquiries sitting in the Formspree account, and whether a data
+      processing agreement with Formspree is required here.
+- [x] **Footer social placeholder removed — 2026-10-15.** The practice has no social accounts,
+      so the line is gone rather than left as a stub. Schema `sameAs` now carries the one
+      independently verified public profile (Bon Secours); the unverifiable guesses are out.
 
 ### Content confirmed as intentionally omitted (not a gap)
 - Patient testimonials — deliberately left out per the brief and Medical Council of Ireland

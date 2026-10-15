@@ -46,8 +46,11 @@ the site is actually published.
       instead.** That is deliberate: the earlier version displayed "your enquiry has been
       received" without sending anything, so a patient was told the clinic would call and then
       never heard from anyone. Nothing now claims success unless Formspree confirmed it.
-- [ ] **Legal pages are placeholders** — each needs proper legal/GDPR review.
-- [ ] **Social share image is a placeholder SVG** — should be a real 1200×630 JPG or PNG.
+- [x] **Legal pages are real policies** — rewritten 2026-10-15; no placeholder text remains.
+      A professional legal/GDPR review is still recommended before relying on them, and two
+      questions need the practice's answer: enquiry retention period, and whether a Formspree
+      data processing agreement is required.
+- [x] **Social share image** — real 1200×630 PNG (`og-image.png`) shipped 2026-10-15.
 - [ ] **No Lighthouse/PageSpeed run** — no browser tooling in the build environment.
 
 ## Launch steps, none started
