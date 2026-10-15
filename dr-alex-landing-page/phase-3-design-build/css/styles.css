@@ -51,7 +51,16 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: var(--header-height); }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  /* The closed mobile nav is parked off-canvas with translateX(100%), and a
+     transform still counts toward the document's scrollable area — so the page
+     scrolled sideways to a blank strip on phones. Clipped here rather than
+     hidden: overflow-x: clip does not create a scroll container, so the sticky
+     header keeps working, which overflow-x: hidden would break. */
+  overflow-x: clip;
+}
 body {
   margin: 0;
   font-family: var(--font-body);
