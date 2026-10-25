@@ -388,6 +388,10 @@ h3 { font-size: 1.28rem; margin-bottom: 0.5rem; letter-spacing: 0; }
 
 /* ---------- Card grid ---------- */
 .card-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 2rem; }
+/* Three cards, so it goes to 3 columns rather than reusing .card-grid's 4 —
+   a 3-in-4 row leaves a conspicuous empty cell on wide screens. */
+.prescription-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 2rem; }
+.prescription-note { margin-top: 1.5rem; }
 .card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -528,6 +532,7 @@ h3 { font-size: 1.28rem; margin-bottom: 0.5rem; letter-spacing: 0; }
   .about-grid { grid-template-columns: 1fr; max-width: 46rem; }
 
   .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .prescription-grid { grid-template-columns: repeat(2, 1fr); }
   .trust-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr 1.05fr; align-items: start; }
   .footer-inner { grid-template-columns: 1.5fr 1fr 1fr; }
@@ -553,6 +558,7 @@ h3 { font-size: 1.28rem; margin-bottom: 0.5rem; letter-spacing: 0; }
   .nav-cta { margin-top: 0; width: auto; }
 
   .card-grid { grid-template-columns: repeat(4, 1fr); }
+  .prescription-grid { grid-template-columns: repeat(3, 1fr); }
   .trust-grid { grid-template-columns: repeat(4, 1fr); }
 
   .hero { padding: 6rem 0; }
