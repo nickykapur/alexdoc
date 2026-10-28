@@ -94,6 +94,8 @@
         Dr Mudrakouski&rsquo;s secretary, will phone you to arrange a call with the doctor.
         Prescriptions are only issued after that review &mdash; this form does not request
         or issue a prescription.</p>
+        <!-- Test price, not confirmed by the practice. Also used in FEE below. -->
+        <p class="fine-print"><strong>Fee: &euro;35 for the review call.</strong></p>
 
         <div class="rx-progress" aria-hidden="true"></div>
         <p class="rx-step-label" id="rx-step-label" aria-live="polite"></p>
@@ -199,7 +201,7 @@
             <fieldset>
               <legend>Please confirm</legend>
               <label class="rx-option"><input type="checkbox" name="ack-review" required>
-                <span>I understand this is a request for a call, not a prescription. Any prescription is issued only after Dr Mudrakouski has reviewed my medication.</span></label>
+                <span>I understand this is a request for a call, not a prescription. Any prescription is issued only after Dr Mudrakouski has reviewed my medication. The review call costs &euro;35.</span></label>
               <label class="rx-option"><input type="checkbox" name="ack-controlled" required>
                 <span>I understand that controlled pain medicines cannot be issued as repeats and always need a review.</span></label>
               <label class="rx-option"><input type="checkbox" name="ack-data" required>
@@ -256,6 +258,8 @@
     // once an EEA-hosted form endpoint has been chosen and wired in submit().
     var TEST_MODE = true;
     var TOTAL = 6;
+    // Test price, not yet confirmed by the practice. Keep in step with the intro.
+    var FEE = "€35 for the review call";
 
     var form = document.getElementById("rx-form");
     var steps = form.querySelectorAll(".rx-step");
@@ -347,7 +351,8 @@
         ["About", val("reason")],
         ["Days", vals("days").join(", ")],
         ["Times", vals("times").join(", ")],
-        ["Voicemail OK", val("voicemail")]
+        ["Voicemail OK", val("voicemail")],
+        ["Fee", FEE]
       ];
     }
 
