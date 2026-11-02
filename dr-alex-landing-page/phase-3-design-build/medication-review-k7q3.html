@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Medication Review Call | Dr Aliaksandr Mudrakouski</title>
+  <!-- Unlisted test page: not linked from the site, not in sitemap.xml, and
+       deliberately not named in robots.txt (that file is public, so listing it
+       there would advertise the URL). noindex keeps it out of search results. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <!-- Shared stylesheet is read only from here. Everything specific to this
+       page lives in the <style> block below so the live site is never touched. -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- No consent.js / Google Analytics: test visits must not reach the real
+       analytics property. -->
+  <style>
+    .rx-test-banner {
+      background: var(--color-placeholder-bg);
+      color: var(--color-placeholder);
+      border-bottom: 1px solid var(--color-placeholder);
+      padding: 0.6rem 0;
+      font-size: 0.925rem;
+      text-align: center;
+    }
+    .rx-header { background: var(--color-teal-700); color: #fff; padding: 1.25rem 0; }
+    .rx-header a { color: #fff; text-decoration: none; font-family: var(--font-display); font-size: 1.15rem; }
+    .rx-main { background: var(--color-cream); padding: 2.5rem 0 4rem; min-height: 70vh; }
+    .rx-card {
+      max-width: 640px; margin: 0 auto;
+      background: var(--color-surface);
+      border: 1px solid var(--color-cream-dark);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      padding: 1.75rem 1.25rem;
+    }
+    @media (min-width: 768px) { .rx-card { padding: 2.5rem; } }
+    .rx-card h1 { font-family: var(--font-display); font-size: 1.75rem; margin: 0 0 0.5rem; color: var(--color-teal-900); }
+    .rx-card h2 { font-family: var(--font-display); font-size: 1.35rem; margin: 0 0 1rem; color: var(--color-teal-900); }
+    .rx-progress { display: flex; gap: 0.35rem; margin: 1.25rem 0 0.5rem; }
+    .rx-progress span { flex: 1; height: 4px; border-radius: 2px; background: var(--color-teal-100); }
+    .rx-progress span.done { background: var(--color-teal-700); }
+    .rx-step-label { font-size: 0.875rem; color: var(--color-text-muted); margin: 0 0 1.5rem; }
+    .rx-step[hidden], .rx-stop[hidden] { display: none; }
+    .rx-step:focus, .rx-stop:focus { outline: none; }
+    fieldset { border: 0; padding: 0; margin: 0 0 1.25rem; }
+    legend { font-weight: 600; margin-bottom: 0.75rem; color: var(--color-text); }
+    .rx-option {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      border: 1px solid var(--color-border); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin-bottom: 0.6rem; cursor: pointer;
+    }
+    .rx-option:hover { border-color: var(--color-teal-600); }
+    .rx-option:has(input:checked) { border-color: var(--color-teal-700); background: var(--color-teal-50); }
+    .rx-option input { margin-top: 0.2rem; accent-color: var(--color-teal-700); }
+    .rx-field { margin-bottom: 1rem; }
+    .rx-field label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+    .rx-field input {
+      width: 100%; padding: 0.7rem 0.8rem; font: inherit;
+      border: 1px solid var(--color-border); border-radius: var(--radius-sm);
+    }
+    .rx-field input:focus { outline: 2px solid var(--color-teal-600); outline-offset: 1px; }
+    .rx-hint { font-size: 0.875rem; color: var(--color-text-muted); margin: 0.3rem 0 0; }
+    .rx-list { margin: 0 0 1.25rem; padding-left: 1.25rem; }
+    .rx-list li { margin-bottom: 0.35rem; }
+    .rx-error { color: var(--color-error); font-size: 0.925rem; margin: 0 0 1rem; min-height: 1.2em; }
+    .rx-actions { display: flex; justify-content: space-between; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .rx-actions .btn { min-width: 8rem; }
+    .rx-actions .btn[hidden] { display: none; }
+    .rx-stop { border-left: 4px solid var(--color-error); padding-left: 1rem; }
+    .rx-stop.rx-info { border-left-color: var(--color-teal-700); }
+    .rx-summary { background: var(--color-teal-50); border-radius: var(--radius-sm); padding: 1rem; margin: 0 0 1.25rem; }
+    .rx-summary dt { font-weight: 600; font-size: 0.875rem; color: var(--color-text-muted); }
+    .rx-summary dd { margin: 0 0 0.6rem; }
+    .rx-preview {
+      white-space: pre-wrap; font-size: 0.85rem; background: var(--color-cream);
+      border: 1px dashed var(--color-cream-dark); padding: 1rem; border-radius: var(--radius-sm);
+    }
+  </style>
+</head>
+<body>
+  <div class="rx-test-banner" role="note">
+    <strong>Test page &mdash; not live.</strong> Nothing entered here is sent anywhere.
+  </div>
+
+  <header class="rx-header">
+    <div class="container"><a href="/">Dr Aliaksandr Mudrakouski &middot; Pain Management</a></div>
+  </header>
+
+  <main class="rx-main" id="main-content">
+    <div class="container">
+      <div class="rx-card">
+        <h1>Request a Medication Review Call</h1>
+        <p class="fine-print">For existing patients who need their medication reviewed. Sasha,
+        Dr Mudrakouski&rsquo;s secretary, will phone you to arrange a call with the doctor.
+        Prescriptions are only issued after that review &mdash; this form does not request
+        or issue a prescription.</p>
+        <!-- Test price, not confirmed by the practice. Also used in FEE below. -->
+        <p class="fine-print"><strong>Fee: &euro;35 for the review call.</strong></p>
+
+        <div class="rx-progress" aria-hidden="true"></div>
+        <p class="rx-step-label" id="rx-step-label" aria-live="polite"></p>
+
+        <form id="rx-form" novalidate>
+
+          <!-- Step 1: who is this for -->
+          <section class="rx-step" data-step="1" tabindex="-1">
+            <h2>Who is this request for?</h2>
+            <fieldset>
+              <legend>Choose one</legend>
+              <label class="rx-option"><input type="radio" name="who" value="self"> <span>For myself (I am 18 or over)</span></label>
+              <label class="rx-option"><input type="radio" name="who" value="child"> <span>For a child under 18</span></label>
+              <label class="rx-option"><input type="radio" name="who" value="other"> <span>For someone else</span></label>
+            </fieldset>
+          </section>
+
+          <!-- Step 2: urgent screening -->
+          <section class="rx-step" data-step="2" tabindex="-1" hidden>
+            <h2>Before you continue</h2>
+            <p>Do any of these apply to you right now?</p>
+            <ul class="rx-list">
+              <li>Severe pain, or pain that is getting worse quickly</li>
+              <li>New weakness, numbness, or tingling in your legs or arms</li>
+              <li>New loss of bladder or bowel control, or numbness around the groin</li>
+              <li>Side effects that worry you, such as severe drowsiness or difficulty breathing</li>
+              <li>You think you may have taken too much of a medication</li>
+            </ul>
+            <fieldset>
+              <legend>Do any of these apply?</legend>
+              <label class="rx-option"><input type="radio" name="urgent" value="yes"> <span>Yes, one or more apply</span></label>
+              <label class="rx-option"><input type="radio" name="urgent" value="no"> <span>No, none of these apply</span></label>
+            </fieldset>
+          </section>
+
+          <!-- Step 3: existing patient + reason -->
+          <section class="rx-step" data-step="3" tabindex="-1" hidden>
+            <h2>About your care at this clinic</h2>
+            <fieldset>
+              <legend>Have you had a consultation with Dr Mudrakouski before?</legend>
+              <label class="rx-option"><input type="radio" name="existing" value="yes"> <span>Yes, I am an existing patient</span></label>
+              <label class="rx-option"><input type="radio" name="existing" value="no"> <span>No, I have not been seen yet</span></label>
+            </fieldset>
+            <fieldset id="rx-reason">
+              <legend>What is the call about?</legend>
+              <label class="rx-option"><input type="radio" name="reason" value="Review before my next prescription"> <span>I need a review before my next prescription</span></label>
+              <label class="rx-option"><input type="radio" name="reason" value="Side effects or a question about my medication"> <span>Side effects or a question about my medication</span></label>
+              <label class="rx-option"><input type="radio" name="reason" value="My pain has changed since my last visit"> <span>My pain has changed since my last visit</span></label>
+            </fieldset>
+            <p class="rx-hint">You do not need to name your medication &mdash; the doctor will go through it with you on the call.</p>
+          </section>
+
+          <!-- Step 4: contact details -->
+          <section class="rx-step" data-step="4" tabindex="-1" hidden>
+            <h2>Your details</h2>
+            <div class="rx-field">
+              <label for="rx-name">Full name</label>
+              <input type="text" id="rx-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="rx-field">
+              <label for="rx-dob">Date of birth</label>
+              <input type="date" id="rx-dob" name="dob" autocomplete="bday" required>
+              <p class="rx-hint">So Sasha can find your record.</p>
+            </div>
+            <div class="rx-field">
+              <label for="rx-phone">Mobile number</label>
+              <input type="tel" id="rx-phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="rx-field">
+              <label for="rx-email">Email <span class="fine-print">(optional)</span></label>
+              <input type="email" id="rx-email" name="email" autocomplete="email">
+            </div>
+            <p class="rx-hint">Please do not include medication names, doses, or other clinical details anywhere on this form.</p>
+          </section>
+
+          <!-- Step 5: call availability -->
+          <section class="rx-step" data-step="5" tabindex="-1" hidden>
+            <h2>When can we call you?</h2>
+            <fieldset>
+              <legend>Days that suit you (choose any)</legend>
+              <label class="rx-option"><input type="checkbox" name="days" value="Monday"> <span>Monday</span></label>
+              <label class="rx-option"><input type="checkbox" name="days" value="Tuesday"> <span>Tuesday</span></label>
+              <label class="rx-option"><input type="checkbox" name="days" value="Wednesday"> <span>Wednesday</span></label>
+              <label class="rx-option"><input type="checkbox" name="days" value="Thursday"> <span>Thursday</span></label>
+              <label class="rx-option"><input type="checkbox" name="days" value="Friday"> <span>Friday</span></label>
+            </fieldset>
+            <fieldset>
+              <legend>Time of day (choose any)</legend>
+              <label class="rx-option"><input type="checkbox" name="times" value="Morning (9am–12pm)"> <span>Morning (9am&ndash;12pm)</span></label>
+              <label class="rx-option"><input type="checkbox" name="times" value="Afternoon (12pm–5pm)"> <span>Afternoon (12pm&ndash;5pm)</span></label>
+            </fieldset>
+            <fieldset>
+              <legend>If we miss you, may we leave a voicemail saying the clinic called?</legend>
+              <label class="rx-option"><input type="radio" name="voicemail" value="Yes"> <span>Yes</span></label>
+              <label class="rx-option"><input type="radio" name="voicemail" value="No"> <span>No, please just try again</span></label>
+            </fieldset>
+          </section>
+
+          <!-- Step 6: review and confirm -->
+          <section class="rx-step" data-step="6" tabindex="-1" hidden>
+            <h2>Check and send</h2>
+            <dl class="rx-summary" id="rx-summary"></dl>
+            <fieldset>
+              <legend>Please confirm</legend>
+              <label class="rx-option"><input type="checkbox" name="ack-review" required>
+                <span>I understand this is a request for a call, not a prescription. Any prescription is issued only after Dr Mudrakouski has reviewed my medication. The review call costs &euro;35.</span></label>
+              <label class="rx-option"><input type="checkbox" name="ack-controlled" required>
+                <span>I understand that controlled pain medicines cannot be issued as repeats and always need a review.</span></label>
+              <label class="rx-option"><input type="checkbox" name="ack-data" required>
+                <span>I agree that the clinic may use these details to contact me about this request. See the <a href="privacy.html">privacy policy</a>.</span></label>
+            </fieldset>
+          </section>
+
+          <!-- Stop screens -->
+          <section class="rx-stop" id="stop-child" tabindex="-1" hidden>
+            <h2>This service is for adults</h2>
+            <p>Dr Mudrakouski&rsquo;s practice sees adult patients. For a child&rsquo;s medication, please contact your GP.</p>
+          </section>
+          <section class="rx-stop rx-info" id="stop-other" tabindex="-1" hidden>
+            <h2>The patient needs to make this request</h2>
+            <p>Please ask the patient to fill in this form themselves. If you care for someone who cannot,
+            phone Sasha on <a href="tel:+353857133548">085&nbsp;713&nbsp;3548</a> and Sasha can help.</p>
+          </section>
+          <section class="rx-stop" id="stop-urgent" tabindex="-1" hidden>
+            <h2>Please get help now</h2>
+            <p>Do not wait for a call back. Contact your GP straight away, or go to your nearest
+            emergency department. In an emergency, call <a href="tel:112">112</a> or <a href="tel:999">999</a>.</p>
+          </section>
+          <section class="rx-stop rx-info" id="stop-new" tabindex="-1" hidden>
+            <h2>Book a consultation first</h2>
+            <p>Medication reviews are for patients Dr Mudrakouski has already seen. To book your first
+            consultation, phone Sasha on <a href="tel:+353857133548">085&nbsp;713&nbsp;3548</a> or use the
+            <a href="/#contact">contact form</a>.</p>
+          </section>
+
+          <!-- Done -->
+          <section class="rx-stop rx-info" id="rx-done" tabindex="-1" hidden>
+            <h2>Request received</h2>
+            <p>Thank you. Sasha will phone you at one of the times you chose to arrange your call with
+            Dr Mudrakouski.</p>
+            <p class="fine-print"><strong>Test mode:</strong> nothing was sent. This is the message Sasha would receive:</p>
+            <pre class="rx-preview" id="rx-preview"></pre>
+          </section>
+
+          <p class="rx-error" id="rx-error" role="alert"></p>
+
+          <div class="rx-actions">
+            <button type="button" class="btn btn-outline" id="rx-back">Back</button>
+            <button type="button" class="btn btn-primary" id="rx-next">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    // While true, the form never leaves the browser: the confirmation screen
+    // shows the message the secretary would receive instead. Switch off only
+    // once an EEA-hosted form endpoint has been chosen and wired in submit().
+    var TEST_MODE = true;
+    var TOTAL = 6;
+    // Test price, not yet confirmed by the practice. Keep in step with the intro.
+    var FEE = "€35 for the review call";
+
+    var form = document.getElementById("rx-form");
+    var steps = form.querySelectorAll(".rx-step");
+    var stops = form.querySelectorAll(".rx-stop");
+    var backBtn = document.getElementById("rx-back");
+    var nextBtn = document.getElementById("rx-next");
+    var errorEl = document.getElementById("rx-error");
+    var labelEl = document.getElementById("rx-step-label");
+    var progress = document.querySelector(".rx-progress");
+    var current = 1;
+    var stopShown = null;
+
+    for (var i = 0; i < TOTAL; i++) progress.appendChild(document.createElement("span"));
+
+    function val(name) {
+      var el = form.querySelector('input[name="' + name + '"]:checked');
+      return el ? el.value : "";
+    }
+    function vals(name) {
+      return Array.prototype.map.call(
+        form.querySelectorAll('input[name="' + name + '"]:checked'),
+        function (el) { return el.value; });
+    }
+    function field(id) { return document.getElementById(id).value.trim(); }
+
+    function render(initial) {
+      steps.forEach(function (s) { s.hidden = Number(s.dataset.step) !== current || !!stopShown; });
+      stops.forEach(function (s) { s.hidden = s.id !== stopShown; });
+      Array.prototype.forEach.call(progress.children, function (bar, i) {
+        bar.className = i < current ? "done" : "";
+      });
+      labelEl.textContent = stopShown === "rx-done" ? "Complete" : "Step " + current + " of " + TOTAL;
+      backBtn.style.visibility = (current > 1 || stopShown) && stopShown !== "rx-done" ? "visible" : "hidden";
+      nextBtn.hidden = !!stopShown;
+      nextBtn.textContent = current === TOTAL ? "Send request" : "Next";
+      errorEl.textContent = "";
+      var shown = stopShown ? document.getElementById(stopShown) : form.querySelector('.rx-step[data-step="' + current + '"]');
+      // Move focus to the new step for screen readers, but not on page load,
+      // where it would scroll past the introduction.
+      if (!initial) shown.focus();
+    }
+
+    // Returns an error message, a stop-screen id, or null to advance.
+    function check(step) {
+      switch (step) {
+        case 1:
+          if (!val("who")) return { error: "Please choose who this request is for." };
+          if (val("who") === "child") return { stop: "stop-child" };
+          if (val("who") === "other") return { stop: "stop-other" };
+          return null;
+        case 2:
+          if (!val("urgent")) return { error: "Please answer the question to continue." };
+          if (val("urgent") === "yes") return { stop: "stop-urgent" };
+          return null;
+        case 3:
+          if (!val("existing")) return { error: "Please tell us whether you have been seen before." };
+          if (val("existing") === "no") return { stop: "stop-new" };
+          if (!val("reason")) return { error: "Please choose what the call is about." };
+          return null;
+        case 4:
+          if (!field("rx-name") || !field("rx-dob") || !field("rx-phone"))
+            return { error: "Please fill in your name, date of birth and mobile number." };
+          if (!/^[+\d][\d\s()-]{6,}$/.test(field("rx-phone")))
+            return { error: "Please check your mobile number." };
+          var email = document.getElementById("rx-email");
+          if (field("rx-email") && !email.checkValidity()) return { error: "Please check your email address." };
+          return null;
+        case 5:
+          if (!vals("days").length || !vals("times").length)
+            return { error: "Please choose at least one day and one time of day." };
+          if (!val("voicemail")) return { error: "Please tell us whether we may leave a voicemail." };
+          return null;
+        case 6:
+          var acks = form.querySelectorAll('[data-step="6"] input[type="checkbox"]');
+          for (var i = 0; i < acks.length; i++) {
+            if (!acks[i].checked) return { error: "Please confirm all three statements to send your request." };
+          }
+          return null;
+      }
+      return null;
+    }
+
+    function rows() {
+      return [
+        ["Name", field("rx-name")],
+        ["Date of birth", field("rx-dob")],
+        ["Mobile", field("rx-phone")],
+        ["Email", field("rx-email") || "Not given"],
+        ["About", val("reason")],
+        ["Days", vals("days").join(", ")],
+        ["Times", vals("times").join(", ")],
+        ["Voicemail OK", val("voicemail")],
+        ["Fee", FEE]
+      ];
+    }
+
+    function buildSummary() {
+      var dl = document.getElementById("rx-summary");
+      dl.innerHTML = "";
+      rows().forEach(function (r) {
+        var dt = document.createElement("dt"); dt.textContent = r[0];
+        var dd = document.createElement("dd"); dd.textContent = r[1];
+        dl.appendChild(dt); dl.appendChild(dd);
+      });
+    }
+
+    function submit() {
+      var text = "New medication review call request\n\n" +
+        rows().map(function (r) { return r[0] + ": " + r[1]; }).join("\n") +
+        "\n\nThe patient confirmed they understand this is a request for a call, not a prescription.";
+      if (TEST_MODE) {
+        document.getElementById("rx-preview").textContent = text;
+        stopShown = "rx-done";
+        render();
+        return;
+      }
+      // Live sending is intentionally not implemented yet.
+    }
+
+    nextBtn.addEventListener("click", function () {
+      var result = check(current);
+      if (result && result.error) { errorEl.textContent = result.error; return; }
+      if (result && result.stop) { stopShown = result.stop; render(); return; }
+      if (current === TOTAL) { submit(); return; }
+      current++;
+      if (current === TOTAL) buildSummary();
+      render();
+    });
+
+    backBtn.addEventListener("click", function () {
+      if (stopShown) { stopShown = null; }
+      else if (current > 1) { current--; }
+      render();
+    });
+
+    // Hide the reason question until the patient says they are existing.
+    var reasonSet = document.getElementById("rx-reason");
+    function syncReason() { reasonSet.hidden = val("existing") !== "yes"; }
+    form.addEventListener("change", syncReason);
+    syncReason();
+
+    render(true);
+  })();
+  </script>
+</body>
+</html>
